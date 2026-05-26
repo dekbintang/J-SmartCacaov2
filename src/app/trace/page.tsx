@@ -204,21 +204,21 @@ const MOCK_DATA: Record<string, BatchResult> = {
         done: true, date: '12 Feb',
         note: 'Panen selektif biji matang di pagi hari.',
         detail: 'Pemanenan dilakukan secara selektif pada pagi hari pukul 06.00–10.00 WITA ketika suhu masih sejuk. Buah kakao yang dipilih adalah yang telah matang sempurna berusia 5–6 bulan sejak pembungaan, ditandai warna kuning kemerahan merata. Kondisi cuaca cerah, suhu lingkungan 28°C dengan kelembapan 72%. Pohon kakao berumur 7 tahun ini menghasilkan rata-rata 1,2 kg buah segar per pohon. Total 420 pohon dipanen dalam satu sesi, menghasilkan 2.520 kg buah segar yang kemudian dikupas dan diambil bijinya menjadi 2.340 kg biji segar siap fermentasi.',
-        photo: 'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=600&q=70&auto=format&fit=crop',
+        photo: '/images/panen-selektif.jpg',
         photoAlt: 'Panen biji kakao segar',
       },
       {
         done: true, date: '13 Feb',
         note: 'Fermentasi 6 hari dalam kotak kayu berlapis.',
         detail: 'Proses fermentasi berlangsung selama 6 hari penuh menggunakan kotak kayu jati berlapis tiga susun berukuran 60×60×80 cm. Biji kakao segar ditumpuk setinggi 70 cm lalu ditutup rapat dengan karung goni untuk menjaga panas. Pembalikan dilakukan setiap 48 jam (hari ke-2 dan ke-4) untuk memastikan aerasi merata. Suhu fermentasi terjaga antara 45–50°C—zona ideal yang memicu aktivitas ragi dan bakteri asam asetat untuk memecah pulp dan mengembangkan prekursor cita rasa cokelat. Proses ini berlangsung di bawah pengawasan mandor fermentasi berpengalaman 12 tahun, I Nyoman Raka.',
-        photo: 'https://images.unsplash.com/photo-1619481577822-b4c0fa1ff1d1?w=600&q=70&auto=format&fit=crop',
+        photo: '/images/fermentasi.png',
         photoAlt: 'Fermentasi biji kakao dalam kotak kayu',
       },
       {
         done: true, date: '19 Feb',
         note: 'Pengeringan via Smart Dryer hibrida 6 hari.',
         detail: 'Pengeringan menggunakan Smart Dryer Hibrida generasi ke-2 yang dikembangkan bersama Universitas Udayana. Sistem ini menggabungkan panel surya 2 kWp dengan pemanas LPG cadangan, mempertahankan suhu optimal 45–55°C sepanjang proses. Sensor IoT DHT22 tertanam di 4 titik ruang pengering memantau suhu dan kelembapan setiap 15 menit secara real-time. Data dikirim ke cloud ledger terenkripsi (hash: 0x4f2a...c91e) yang tidak dapat dimanipulasi. Kadar air berhasil diturunkan dari 55% → 7.2% dalam 6 hari—memenuhi standar SNI 2323:2008 untuk ekspor. Konsumsi energi 40% lebih hemat dibanding dryer konvensional.',
-        photo: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=70&auto=format&fit=crop',
+        photo: '/images/pengeringan.jpg',
         photoAlt: 'Pengeringan biji kakao dengan Smart Dryer',
         hasIoT: true,
       },
@@ -270,21 +270,21 @@ const MOCK_DATA: Record<string, BatchResult> = {
         done: true, date: '8 Jan',
         note: 'Panen pagi hari dari pohon organik bersertifikat.',
         detail: 'Panen dilakukan pagi hari dari 310 pohon kakao organik bersertifikat yang telah bebas pestisida kimia selama lebih dari 5 tahun. Pemilihan buah dilakukan 100% manual tanpa alat mekanis untuk menghindari kontaminasi. Pohon-pohon ini mendapat pupuk organik berbasis kompos daun kakao dan kotoran sapi lokal yang difermentasi. Kebun terletak di ketinggian 180 mdpl dengan naungan pohon kelapa dan pisang yang menciptakan iklim mikro ideal. Hasil panen 1.870 kg biji segar telah memenuhi standar sertifikasi organik IFOAM dan siap memasuki rantai pasok premium.',
-        photo: 'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=600&q=70&auto=format&fit=crop',
+        photo: '/images/panen-selektif.jpg',
         photoAlt: 'Panen kakao organik Jembrana',
       },
       {
         done: true, date: '9 Jan',
         note: 'Fermentasi 5 hari dalam kotak kayu organik.',
         detail: 'Fermentasi berlangsung 5 hari menggunakan kotak kayu yang telah disanitasi dengan air panas dan cuka apel—tanpa bahan kimia sintetis. Seluruh proses memenuhi protokol organik ketat: tidak ada pupuk kimia, pestisida, atau bahan aditif dalam radius 50 meter area fermentasi. Pengawas fermentasi organik tersertifikasi, Wayan Darma, memonitor pH dan aroma setiap 12 jam. Temperatur fermentasi mencapai puncak 47°C pada hari ke-3, menghasilkan biji dengan tingkat fermentasi sempurna 94%—melampaui standar Grade A.',
-        photo: 'https://images.unsplash.com/photo-1619481577822-b4c0fa1ff1d1?w=600&q=70&auto=format&fit=crop',
+        photo: '/images/fermentasi.png',
         photoAlt: 'Fermentasi organik',
       },
       {
         done: true, date: '15 Jan',
         note: 'Pengeringan Smart Dryer 5 hari. Kadar air akhir 7.8%.',
         detail: 'Pengeringan menggunakan Smart Dryer bertenaga surya penuh (100% energi terbarukan) selama 5 hari. Karena batch ini berlabel organik, tidak ada bahan bakar fosil yang digunakan dalam seluruh proses pengeringan—hanya tenaga matahari. Data IoT DHT22 mencatat 480 titik data selama proses, seluruhnya tersimpan di cloud ledger immutable (hash: 0x8b3c...d72f). Penurunan kadar air dari 54% → 7.8% berjalan mulus tanpa interupsi, membuktikan keandalan sistem bahkan di musim hujan berkat atap kaca yang dapat disesuaikan sudutnya.',
-        photo: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=70&auto=format&fit=crop',
+        photo: '/images/pengeringan.jpg',
         photoAlt: 'Pengeringan kakao organik',
         hasIoT: true,
       },
@@ -337,21 +337,21 @@ const MOCK_DATA: Record<string, BatchResult> = {
         done: true, date: '5 Mar',
         note: 'Panen perdana musim gugur dari kebun 1.2 hektar.',
         detail: 'Panen perdana musim gugur 2026 dari kebun seluas 1,2 hektar yang mulai produktif setelah 4 tahun penanaman. Sebanyak 180 pohon kakao varietas Trinitario menghasilkan 980 kg biji segar—hasil yang menjanjikan untuk kebun yang baru masuk masa puncak produksi. I Made Suardana, petani muda berusia 31 tahun dengan 9 tahun pengalaman, memanen sendiri dibantu 3 anggota keluarga. Kebun ini menerapkan sistem agroforestri dengan penanaman pohon nangka dan kelapa sebagai tanaman naungan, sekaligus sumber pendapatan tambahan.',
-        photo: 'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=600&q=70&auto=format&fit=crop',
+        photo: '/images/panen-selektif.jpg',
         photoAlt: 'Panen perdana kebun Nusantara',
       },
       {
         done: true, date: '6 Mar',
         note: 'Fermentasi 5 hari berjalan normal.',
         detail: 'Fermentasi 5 hari berjalan sesuai protokol standar dengan pembalikan pada hari ke-2 dan ke-4. Ini adalah batch perdana I Made menggunakan kotak fermentasi kayu baru yang difasilitasi program kemitraan UD. Bali Cacao. Suhu fermentasi memuncak di 44°C—sedikit lebih rendah dari ideal karena cuaca berawan selama 2 hari, namun masih dalam rentang yang dapat menghasilkan fermentasi baik. Tim lapangan UD. Bali Cacao melakukan pendampingan langsung untuk memastikan proses berjalan optimal sesuai SOP.',
-        photo: 'https://images.unsplash.com/photo-1619481577822-b4c0fa1ff1d1?w=600&q=70&auto=format&fit=crop',
+        photo: '/images/fermentasi.png',
         photoAlt: 'Fermentasi batch perdana',
       },
       {
         done: false, date: '—',
         note: 'Pengeringan Smart Dryer sedang berlangsung real-time.',
         detail: 'Proses pengeringan Smart Dryer sedang berjalan. Data IoT terus diperbarui setiap 15 menit. Kadar air saat ini dalam proses penurunan dari 52%. Target kadar air akhir 7.5–8.5% sesuai standar SNI. Estimasi selesai dalam 3–4 hari ke depan tergantung kondisi cuaca.',
-        photo: null,
+        photo: '/images/pengeringan.jpg',
         pendingIcon: 'dryer',
         hasIoT: true,
         isLive: true,
@@ -378,14 +378,14 @@ const MOCK_DATA: Record<string, BatchResult> = {
 
 const QUALITY_COLOR: Record<string, string> = {
   AA: 'text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 border-emerald-200 dark:border-emerald-800',
-  A:  'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 border-blue-200 dark:border-blue-800',
-  B:  'text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800',
-  C:  'text-red-700 dark:text-red-400 bg-red-50 dark:bg-red-900/30 border-red-200 dark:border-red-800',
+  A: 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 border-blue-200 dark:border-blue-800',
+  B: 'text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800',
+  C: 'text-red-700 dark:text-red-400 bg-red-50 dark:bg-red-900/30 border-red-200 dark:border-red-800',
 };
 
 const PENDING_ICONS: Record<string, React.ReactElement> = {
-  ship:      <Package size={24} className="text-zinc-400" />,
-  dryer:     <Thermometer size={24} className="text-emerald-500" />,
+  ship: <Package size={24} className="text-zinc-400" />,
+  dryer: <Thermometer size={24} className="text-emerald-500" />,
   selection: <Award size={24} className="text-zinc-400" />,
 };
 
@@ -472,10 +472,10 @@ function IoTPanel({ iot, c, isDark, isLive }: IoTPanelProps) {
 
       <div className="grid grid-cols-2 gap-2">
         {[
-          { label: c.iotTemp,     value: iot.avgTemp ?? '—', icon: <Thermometer size={12} /> },
-          { label: c.iotHumidity, value: iot.finalHumidity,  icon: <Droplets size={12} />    },
-          { label: c.iotDuration, value: iot.duration,       icon: <Clock size={12} />        },
-          { label: c.iotStandard, value: iot.standard,       icon: <ShieldCheck size={12} />  },
+          { label: c.iotTemp, value: iot.avgTemp ?? '—', icon: <Thermometer size={12} /> },
+          { label: c.iotHumidity, value: iot.finalHumidity, icon: <Droplets size={12} /> },
+          { label: c.iotDuration, value: iot.duration, icon: <Clock size={12} /> },
+          { label: c.iotStandard, value: iot.standard, icon: <ShieldCheck size={12} /> },
         ].map(({ label, value, icon }) => (
           <div key={label} className={cn('rounded-xl p-2.5', isDark ? 'bg-zinc-800' : 'bg-white/80')}>
             <div className={cn(
@@ -758,8 +758,8 @@ interface AgrowisataCTAProps {
 function AgrowisataCTA({ result, c, isDark }: AgrowisataCTAProps) {
   const ctaFacts = [
     { icon: <Calendar size={11} />, label: c.ctaFact1 },
-    { icon: <User size={11} />,     label: c.ctaFact2 },
-    { icon: <Ticket size={11} />,   label: c.ctaFact3 },
+    { icon: <User size={11} />, label: c.ctaFact2 },
+    { icon: <Ticket size={11} />, label: c.ctaFact3 },
   ];
 
   return (
@@ -849,17 +849,17 @@ interface QRScannerModalProps {
 }
 
 function QRScannerModal({ isDark, c, onDetected, onClose }: QRScannerModalProps) {
-  const videoRef    = useRef<HTMLVideoElement>(null);
-  const canvasRef   = useRef<HTMLCanvasElement>(null);
-  const streamRef   = useRef<MediaStream | null>(null);
-  const rafRef      = useRef<number>(0);
-  const jsQRRef     = useRef<((data: Uint8ClampedArray, width: number, height: number, opts?: object) => { data: string } | null) | null>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const streamRef = useRef<MediaStream | null>(null);
+  const rafRef = useRef<number>(0);
+  const jsQRRef = useRef<((data: Uint8ClampedArray, width: number, height: number, opts?: object) => { data: string } | null) | null>(null);
   const detectedRef = useRef(false);
   const loopStarted = useRef(false);
 
   const [facingMode, setFacingMode] = useState<'environment' | 'user'>('environment');
-  const [scanError, setScanError]   = useState<ScannerError | null>(null);
-  const [detected, setDetected]     = useState(false);
+  const [scanError, setScanError] = useState<ScannerError | null>(null);
+  const [detected, setDetected] = useState(false);
 
   // ── Stop camera stream ──────────────────────────────────────────────────────
   const stopStream = useCallback(() => {
@@ -884,7 +884,7 @@ function QRScannerModal({ isDark, c, onDetected, onClose }: QRScannerModalProps)
       }
       const script = document.createElement('script');
       script.src = 'https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js';
-      script.onload  = () => resolve();
+      script.onload = () => resolve();
       script.onerror = () => reject(new Error('Failed to load jsQR'));
       document.head.appendChild(script);
     });
@@ -897,7 +897,7 @@ function QRScannerModal({ isDark, c, onDetected, onClose }: QRScannerModalProps)
     if (loopStarted.current) return;
     loopStarted.current = true;
 
-    const video  = videoRef.current;
+    const video = videoRef.current;
     const canvas = canvasRef.current;
     if (!video || !canvas) return;
 
@@ -926,7 +926,7 @@ function QRScannerModal({ isDark, c, onDetected, onClose }: QRScannerModalProps)
         return;
       }
 
-      canvas.width  = video.videoWidth  || 640;
+      canvas.width = video.videoWidth || 640;
       canvas.height = video.videoHeight || 480;
       const ctx = canvas.getContext('2d', { willReadFrequently: true });
       if (!ctx) { rafRef.current = requestAnimationFrame(tick); return; }
@@ -1018,14 +1018,14 @@ function QRScannerModal({ isDark, c, onDetected, onClose }: QRScannerModalProps)
 
   const errorMessage =
     scanError === 'permission_denied' ? c.scanPermissionDenied :
-    scanError === 'no_camera'         ? c.scanNoCamera :
-    scanError === 'generic'           ? c.scanError : '';
+      scanError === 'no_camera' ? c.scanNoCamera :
+        scanError === 'generic' ? c.scanError : '';
 
   const CORNERS = ['top-left', 'top-right', 'bottom-left', 'bottom-right'] as const;
   const cornerClass: Record<typeof CORNERS[number], string> = {
-    'top-left':     'top-0 left-0 border-t-2 border-l-2 rounded-tl-lg',
-    'top-right':    'top-0 right-0 border-t-2 border-r-2 rounded-tr-lg',
-    'bottom-left':  'bottom-0 left-0 border-b-2 border-l-2 rounded-bl-lg',
+    'top-left': 'top-0 left-0 border-t-2 border-l-2 rounded-tl-lg',
+    'top-right': 'top-0 right-0 border-t-2 border-r-2 rounded-tr-lg',
+    'bottom-left': 'bottom-0 left-0 border-b-2 border-l-2 rounded-bl-lg',
     'bottom-right': 'bottom-0 right-0 border-b-2 border-r-2 rounded-br-lg',
   };
 
@@ -1171,10 +1171,10 @@ export default function TraceabilitySection() {
   const isDark = theme === 'dark';
   const c = copy[lang as keyof typeof copy] ?? copy.id;
 
-  const [batchCode, setBatchCode]     = useState('');
-  const [result, setResult]           = useState<BatchResult | null>(null);
-  const [notFound, setNotFound]       = useState(false);
-  const [isLoading, setIsLoading]     = useState(false);
+  const [batchCode, setBatchCode] = useState('');
+  const [result, setResult] = useState<BatchResult | null>(null);
+  const [notFound, setNotFound] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [showScanner, setShowScanner] = useState(false);
 
   const handleSearch = useCallback((code: string) => {
@@ -1409,10 +1409,10 @@ export default function TraceabilitySection() {
                     {/* 4 info tiles (processor & destination removed) */}
                     <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
                       {[
-                        { label: c.farm,     value: result.farm,        icon: <Leaf size={13} />     },
-                        { label: c.harvest,  value: result.harvestDate, icon: <Clock size={13} />    },
-                        { label: c.weight,   value: result.weight,      icon: <Package size={13} />  },
-                        { label: c.moisture, value: result.moisture,    icon: <Droplets size={13} /> },
+                        { label: c.farm, value: result.farm, icon: <Leaf size={13} /> },
+                        { label: c.harvest, value: result.harvestDate, icon: <Clock size={13} /> },
+                        { label: c.weight, value: result.weight, icon: <Package size={13} /> },
+                        { label: c.moisture, value: result.moisture, icon: <Droplets size={13} /> },
                       ].map(({ label, value, icon }) => (
                         <div
                           key={label}

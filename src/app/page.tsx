@@ -17,137 +17,137 @@ import {
 // ════════════════════════════════════════════════════════════════════════════
 const COPY = {
   id: {
-    headline:       'Dari Kebun Jembrana,',
-    headline2:      'Menuju Dunia',
-    iotLabel:       'IoT Smart Dryer',
-    traceLabel:     'Keterlacakan Rantai Pasok',
-    pkgLabel:       'Smart Packaging',
-    subtitle:       'Ekosistem digital terintegrasi yang menyatukan',
-    subtitleConj:   'untuk mengubah kakao Jembrana menjadi destinasi agrowisata dunia.',
-    subtitleAnd:    'dan',
-    cta1:           'Jelajahi Agrowisata',
-    cta2:           'Lacak Produk Anda',
-    qrHint:         'Baru scan QR dari kemasan cokelat?',
-    qrPlaceholder:  'Kode batch (cth: JSC-2025-001)...',
-    scrollLabel:    'Gulir',
-    statsSource:    'Data Resmi · BPS Bali 2025 · Disparda 2025',
-    problemBadge:   '⚠️ Paradoks Bali',
-    problemTitle:   'Kaya Potensi,',
-    problemTitle2:  'Tertinggal Wisatawan',
-    p1a:            'Kabupaten Badung mencatat',
-    p1b:            '4,2 juta',
-    p1c:            'perjalanan wisatawan, sementara Jembrana — penghasil',
-    p1d:            '67% kakao Bali',
-    p1e:            '— hanya mencatatkan',
-    p1f:            '273 ribu',
-    p1g:            'perjalanan per tahun 2025.',
-    p2a:            'Metode pengeringan konvensional menyebabkan durasi membengkak dari',
-    p2b:            '5–7 hari',
-    p2c:            'menjadi',
-    p2d:            '15–22 hari',
-    p2e:            'saat musim hujan, menurunkan kualitas dan mengancam ekspor premium.',
-    solutionBadge:  '✅ Solusi J-SMART CACAO',
-    solutionTitle:  'Ekosistem Terintegrasi Hulu–Hilir',
+    headline: 'Dari Kebun Jembrana,',
+    headline2: 'Menuju Dunia',
+    iotLabel: 'IoT Smart Dryer',
+    traceLabel: 'Keterlacakan Rantai Pasok',
+    pkgLabel: 'Smart Packaging',
+    subtitle: 'Ekosistem digital terintegrasi yang menyatukan',
+    subtitleConj: 'untuk mengubah kakao Jembrana menjadi destinasi agrowisata dunia.',
+    subtitleAnd: 'dan',
+    cta1: 'Jelajahi Agrowisata',
+    cta2: 'Lacak Produk Anda',
+    qrHint: 'Baru scan QR dari kemasan cokelat?',
+    qrPlaceholder: 'Kode batch (cth: JSC-2025-001)...',
+    scrollLabel: 'Gulir',
+    statsSource: 'Data Resmi · BPS Bali 2025 · Disparda 2025',
+    problemBadge: '⚠️ Paradoks Bali',
+    problemTitle: 'Kaya Potensi,',
+    problemTitle2: 'Tertinggal Wisatawan',
+    p1a: 'Kabupaten Badung mencatat',
+    p1b: '4,2 juta',
+    p1c: 'perjalanan wisatawan, sementara Jembrana — penghasil',
+    p1d: '67% kakao Bali',
+    p1e: '— hanya mencatatkan',
+    p1f: '273 ribu',
+    p1g: 'perjalanan per tahun 2025.',
+    p2a: 'Metode pengeringan konvensional menyebabkan durasi membengkak dari',
+    p2b: '5–7 hari',
+    p2c: 'menjadi',
+    p2d: '15–22 hari',
+    p2e: 'saat musim hujan, menurunkan kualitas dan mengancam ekspor premium.',
+    solutionBadge: '✅ Solusi J-SMART CACAO',
+    solutionTitle: 'Ekosistem Terintegrasi Hulu–Hilir',
     solItems: [
       'Smart Dryer IoT mengeliminasi ketergantungan cuaca, menjamin kadar air 7% sesuai SNI 2323:2008',
       'Cloud Ledger menyimpan data tamper-proof untuk sertifikasi Fair Trade & kepercayaan ekspor',
       'Smart Packaging mengubah cokelat artisan menjadi agen promosi destinasi wisata Jembrana',
       'Platform web mengarahkan konsumen Bali Selatan menjadi wisatawan Agrowisata Jembrana',
     ],
-    ecosysBadge:    'Cara Kerja',
-    ecosysTitle:    'Orkestrasi Hulu ke Hilir',
-    ecosysSub:      'Enam tahap ekosistem terintegrasi yang menghubungkan petani kakao Jembrana dengan wisatawan di seluruh Bali',
-    ecosysNote:     'Seluruh data terkoneksi secara real-time melalui infrastruktur Cloud Ledger yang tamper-proof',
-    featBadge:      'Platform',
-    featTitle:      'Empat Pilar J-SMART CACAO',
-    featSub:        'Teknologi cerdas yang mengintegrasikan pertanian presisi, transparansi data, edukasi interaktif, dan pariwisata berkelanjutan',
-    traceTitle:     'Lacak Kakao Anda',
-    traceSub:       'Setiap kemasan cokelat J-SMART CACAO memiliki kode batch unik. Masukkan kode atau scan QR untuk mengetahui perjalanan lengkap dari kebun ke kemasan.',
-    traceExamples:  'Coba contoh kode:',
-    traceMore:      'Buka halaman Keterlacakan lengkap',
-    traceLacak:     'Lacak',
-    eduBadge:       '📖 Digital Storytelling',
-    eduTitle:       'Cokelat Sebagai Portal Edukasi Interaktif',
-    eduSub:         'Setiap scan QR membuka pintu ke cerita mendalam tentang sejarah kebun, profil petani, sistem Subak Abian, dan proses fermentasi.',
-    eduChapLabel:   'Bab Cerita',
-    eduFactLabel:   'Fakta Kunci',
-    eduCtaTitle:    'Jelajahi Cerita Lengkap di Halaman Budaya',
-    eduCtaDesc:     'Temukan galeri foto kebun, video proses fermentasi, peta Subak Abian interaktif, dan wawancara langsung dengan petani.',
-    eduCtaBtn:      'Buka Halaman Budaya',
-    partnersLabel:  'Ekosistem Kolaboratif · Pentahelix',
-    ctaTitle:       'Sudah Punya Kemasan J-SMART CACAO?',
-    ctaDesc:        'Scan QR Code di kemasan Anda dan temukan kisah lengkap di balik cokelat premium yang Anda pegang — mulai dari nama petani, hingga undangan berkunjung ke kebunnya di Jembrana.',
-    ctaBtn1:        'Lacak Produk Saya',
-    ctaBtn2:        'Rencanakan Wisata',
-    ctaFooter:      'J-SMART CACAO · Universitas Udayana · Jembrana, Bali 2026',
-    dragHint:       'Geser untuk menjelajahi',
-    tooltipClose:   'Tutup',
-    statDetail:     'Detail Statistik',
+    ecosysBadge: 'Cara Kerja',
+    ecosysTitle: 'Orkestrasi Hulu ke Hilir',
+    ecosysSub: 'Enam tahap ekosistem terintegrasi yang menghubungkan petani kakao Jembrana dengan wisatawan di seluruh Bali',
+    ecosysNote: 'Seluruh data terkoneksi secara real-time melalui infrastruktur Cloud Ledger yang tamper-proof',
+    featBadge: 'Platform',
+    featTitle: 'Empat Pilar J-SMART CACAO',
+    featSub: 'Teknologi cerdas yang mengintegrasikan pertanian presisi, transparansi data, edukasi interaktif, dan pariwisata berkelanjutan',
+    traceTitle: 'Lacak Kakao Anda',
+    traceSub: 'Setiap kemasan cokelat J-SMART CACAO memiliki kode batch unik. Masukkan kode atau scan QR untuk mengetahui perjalanan lengkap dari kebun ke kemasan.',
+    traceExamples: 'Coba contoh kode:',
+    traceMore: 'Buka halaman Keterlacakan lengkap',
+    traceLacak: 'Lacak',
+    eduBadge: '📖 Digital Storytelling',
+    eduTitle: 'Cokelat Sebagai Portal Edukasi Interaktif',
+    eduSub: 'Setiap scan QR membuka pintu ke cerita mendalam tentang sejarah kebun, profil petani, sistem Subak Abian, dan proses fermentasi.',
+    eduChapLabel: 'Bab Cerita',
+    eduFactLabel: 'Fakta Kunci',
+    eduCtaTitle: 'Jelajahi Cerita Lengkap di Halaman Budaya',
+    eduCtaDesc: 'Temukan galeri foto kebun, video proses fermentasi, peta Subak Abian interaktif, dan wawancara langsung dengan petani.',
+    eduCtaBtn: 'Buka Halaman Budaya',
+    partnersLabel: 'Ekosistem Kolaboratif · Pentahelix',
+    ctaTitle: 'Sudah Punya Kemasan J-SMART CACAO?',
+    ctaDesc: 'Scan QR Code di kemasan Anda dan temukan kisah lengkap di balik cokelat premium yang Anda pegang — mulai dari nama petani, hingga undangan berkunjung ke kebunnya di Jembrana.',
+    ctaBtn1: 'Lacak Produk Saya',
+    ctaBtn2: 'Rencanakan Wisata',
+    ctaFooter: 'J-SMART CACAO · Universitas Udayana · Jembrana, Bali 2026',
+    dragHint: 'Geser untuk menjelajahi',
+    tooltipClose: 'Tutup',
+    statDetail: 'Detail Statistik',
   },
   en: {
-    headline:       'From the Farms of',
-    headline2:      'Jembrana, to the World',
-    iotLabel:       'IoT Smart Dryer',
-    traceLabel:     'Supply Chain Traceability',
-    pkgLabel:       'Smart Packaging',
-    subtitle:       'An integrated digital ecosystem uniting',
-    subtitleConj:   'to transform Jembrana cacao into a world-class agrotourism destination.',
-    subtitleAnd:    'and',
-    cta1:           'Explore Agrotourism',
-    cta2:           'Trace Your Product',
-    qrHint:         'Just scanned a QR from your chocolate package?',
-    qrPlaceholder:  'Batch code (e.g., JSC-2025-001)...',
-    scrollLabel:    'Scroll',
-    statsSource:    'Official Data · BPS Bali 2025 · Disparda 2025',
-    problemBadge:   '⚠️ Bali Paradox',
-    problemTitle:   'Rich in Potential,',
-    problemTitle2:  'Yet Undervisited',
+    headline: 'From the Farms of',
+    headline2: 'Jembrana, to the World',
+    iotLabel: 'IoT Smart Dryer',
+    traceLabel: 'Supply Chain Traceability',
+    pkgLabel: 'Smart Packaging',
+    subtitle: 'An integrated digital ecosystem uniting',
+    subtitleConj: 'to transform Jembrana cacao into a world-class agrotourism destination.',
+    subtitleAnd: 'and',
+    cta1: 'Explore Agrotourism',
+    cta2: 'Trace Your Product',
+    qrHint: 'Just scanned a QR from your chocolate package?',
+    qrPlaceholder: 'Batch code (e.g., JSC-2025-001)...',
+    scrollLabel: 'Scroll',
+    statsSource: 'Official Data · BPS Bali 2025 · Disparda 2025',
+    problemBadge: '⚠️ Bali Paradox',
+    problemTitle: 'Rich in Potential,',
+    problemTitle2: 'Yet Undervisited',
     p1a: 'Badung Regency records', p1b: '4.2 million', p1c: 'tourist trips, while Jembrana — producing',
     p1d: "67% of Bali's cacao", p1e: '— only recorded', p1f: '273 thousand', p1g: 'trips in 2025.',
     p2a: 'Conventional drying methods cause drying duration to balloon from', p2b: '5–7 days',
     p2c: 'to', p2d: '15–22 days', p2e: 'during rainy season, degrading quality and threatening premium exports.',
-    solutionBadge:  '✅ J-SMART CACAO Solution',
-    solutionTitle:  'Integrated Upstream–Downstream Ecosystem',
+    solutionBadge: '✅ J-SMART CACAO Solution',
+    solutionTitle: 'Integrated Upstream–Downstream Ecosystem',
     solItems: [
       'IoT Smart Dryer eliminates weather dependency, ensuring 7% moisture per SNI 2323:2008 standard',
       'Cloud Ledger stores tamper-proof data for Fair Trade certification and export credibility',
       'Smart Packaging turns artisan chocolate into a smart destination promotion agent for Jembrana',
       'Web platform redirects South Bali consumers to become Jembrana agrotourism visitors',
     ],
-    ecosysBadge:    'How It Works',
-    ecosysTitle:    'From Farm to Tourist',
-    ecosysSub:      'Six integrated ecosystem stages connecting Jembrana cacao farmers with tourists across Bali',
-    ecosysNote:     'All data connected in real-time via tamper-proof Cloud Ledger infrastructure',
-    featBadge:      'Platform',
-    featTitle:      'Four Pillars of J-SMART CACAO',
-    featSub:        'Smart technology integrating precision agriculture, data transparency, interactive education, and sustainable tourism',
-    traceTitle:     'Trace Your Cacao',
-    traceSub:       'Every J-SMART CACAO chocolate package has a unique batch code. Enter the code or scan QR to discover the complete journey from farm to wrapper.',
-    traceExamples:  'Try example codes:',
-    traceMore:      'Open full Traceability page',
-    traceLacak:     'Trace',
-    eduBadge:       '📖 Digital Storytelling',
-    eduTitle:       'Chocolate as an Interactive Education Portal',
-    eduSub:         'Every QR scan opens a door to in-depth stories about farm history, farmer profiles, the Subak Abian system, and fermentation processes.',
-    eduChapLabel:   'Story Chapters',
-    eduFactLabel:   'Key Facts',
-    eduCtaTitle:    'Explore the Full Story on the Culture Page',
-    eduCtaDesc:     'Discover farm photo galleries, fermentation process videos, interactive Subak Abian maps, and direct farmer interviews.',
-    eduCtaBtn:      'Open Culture Page',
-    partnersLabel:  'Collaborative Ecosystem · Pentahelix',
-    ctaTitle:       'Got a J-SMART CACAO Package?',
-    ctaDesc:        "Scan the QR Code on your package and discover the complete story behind the premium chocolate in your hands — from the farmer's name to an invitation to visit their farm in Jembrana.",
-    ctaBtn1:        'Trace My Product',
-    ctaBtn2:        'Plan a Visit',
-    ctaFooter:      'J-SMART CACAO · Universitas Udayana · Jembrana, Bali 2026',
-    dragHint:       'Drag to explore',
-    tooltipClose:   'Close',
-    statDetail:     'Stat Detail',
+    ecosysBadge: 'How It Works',
+    ecosysTitle: 'From Farm to Tourist',
+    ecosysSub: 'Six integrated ecosystem stages connecting Jembrana cacao farmers with tourists across Bali',
+    ecosysNote: 'All data connected in real-time via tamper-proof Cloud Ledger infrastructure',
+    featBadge: 'Platform',
+    featTitle: 'Four Pillars of J-SMART CACAO',
+    featSub: 'Smart technology integrating precision agriculture, data transparency, interactive education, and sustainable tourism',
+    traceTitle: 'Trace Your Cacao',
+    traceSub: 'Every J-SMART CACAO chocolate package has a unique batch code. Enter the code or scan QR to discover the complete journey from farm to wrapper.',
+    traceExamples: 'Try example codes:',
+    traceMore: 'Open full Traceability page',
+    traceLacak: 'Trace',
+    eduBadge: '📖 Digital Storytelling',
+    eduTitle: 'Chocolate as an Interactive Education Portal',
+    eduSub: 'Every QR scan opens a door to in-depth stories about farm history, farmer profiles, the Subak Abian system, and fermentation processes.',
+    eduChapLabel: 'Story Chapters',
+    eduFactLabel: 'Key Facts',
+    eduCtaTitle: 'Explore the Full Story on the Culture Page',
+    eduCtaDesc: 'Discover farm photo galleries, fermentation process videos, interactive Subak Abian maps, and direct farmer interviews.',
+    eduCtaBtn: 'Open Culture Page',
+    partnersLabel: 'Collaborative Ecosystem · Pentahelix',
+    ctaTitle: 'Got a J-SMART CACAO Package?',
+    ctaDesc: "Scan the QR Code on your package and discover the complete story behind the premium chocolate in your hands — from the farmer's name to an invitation to visit their farm in Jembrana.",
+    ctaBtn1: 'Trace My Product',
+    ctaBtn2: 'Plan a Visit',
+    ctaFooter: 'J-SMART CACAO · Universitas Udayana · Jembrana, Bali 2026',
+    dragHint: 'Drag to explore',
+    tooltipClose: 'Close',
+    statDetail: 'Stat Detail',
   },
 } as const;
 
 type Lang = keyof typeof COPY;
-type T    = (typeof COPY)[Lang];
+type T = (typeof COPY)[Lang];
 
 // ════════════════════════════════════════════════════════════════════════════
 // THEME CONTEXT — sekarang ada isId untuk bahasa, terpisah dari isDark tema
@@ -158,27 +158,27 @@ const useTheme = () => useContext(ThemeCtx);
 
 function mkSt(isDark: boolean) {
   return {
-    page:     isDark ? 'bg-[#0a0a0a] text-white'                   : 'bg-white text-zinc-900',
-    card:     isDark ? 'bg-[#111111] border-[#1f1f1f]'             : 'bg-white border-gray-200',
-    cardHov:  isDark ? 'hover:border-green-800/60'                  : 'hover:border-green-300',
-    altBg:    isDark ? 'bg-[#0d0d0d]'                               : 'bg-gray-50',
-    divider:  isDark ? 'border-[#1a1a1a]'                           : 'border-gray-100',
-    h:        isDark ? 'text-white'                                  : 'text-zinc-900',
-    body:     isDark ? 'text-zinc-400'                              : 'text-zinc-500',
-    muted:    isDark ? 'text-zinc-500'                              : 'text-zinc-400',
-    dim:      isDark ? 'text-zinc-600'                              : 'text-zinc-400',
-    subCard:  isDark ? 'bg-[#1a1a1a] border-[#2a2a2a]'             : 'bg-gray-100 border-gray-200',
-    input:    isDark
+    page: isDark ? 'bg-[#0a0a0a] text-white' : 'bg-white text-zinc-900',
+    card: isDark ? 'bg-[#111111] border-[#1f1f1f]' : 'bg-white border-gray-200',
+    cardHov: isDark ? 'hover:border-green-800/60' : 'hover:border-green-300',
+    altBg: isDark ? 'bg-[#0d0d0d]' : 'bg-gray-50',
+    divider: isDark ? 'border-[#1a1a1a]' : 'border-gray-100',
+    h: isDark ? 'text-white' : 'text-zinc-900',
+    body: isDark ? 'text-zinc-400' : 'text-zinc-500',
+    muted: isDark ? 'text-zinc-500' : 'text-zinc-400',
+    dim: isDark ? 'text-zinc-600' : 'text-zinc-400',
+    subCard: isDark ? 'bg-[#1a1a1a] border-[#2a2a2a]' : 'bg-gray-100 border-gray-200',
+    input: isDark
       ? 'bg-[#111111] border-[#2a2a2a] text-white placeholder:text-zinc-600 focus:border-green-600/60'
       : 'bg-white border-gray-200 text-zinc-900 placeholder:text-zinc-400 focus:border-green-500',
     ghostBtn: isDark
       ? 'border-[#2a2a2a] bg-[#111111] hover:border-green-700/60 hover:bg-[#161616] text-white hover:text-green-400'
       : 'border-gray-200 bg-white hover:border-green-400/60 hover:bg-green-50/50 text-zinc-800 hover:text-green-700',
-    dotOff:   isDark ? 'bg-[#2a2a2a] hover:bg-[#3a3a3a]'          : 'bg-gray-300 hover:bg-gray-400',
+    dotOff: isDark ? 'bg-[#2a2a2a] hover:bg-[#3a3a3a]' : 'bg-gray-300 hover:bg-gray-400',
     codeChip: isDark
       ? 'bg-[#151515] border-[#252525] text-zinc-400 hover:border-green-700/50 hover:text-green-400'
       : 'bg-gray-50 border-gray-200 text-zinc-500 hover:border-green-400/60 hover:text-green-600',
-    grid:     isDark
+    grid: isDark
       ? 'bg-[linear-gradient(rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.018)_1px,transparent_1px)]'
       : 'bg-[linear-gradient(rgba(0,0,0,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.035)_1px,transparent_1px)]',
   };
@@ -188,22 +188,22 @@ function mkSt(isDark: boolean) {
 // COLOR MAP
 // ════════════════════════════════════════════════════════════════════════════
 const COLOR_MAP: Record<string, { bg: string; text: string; border: string; glow: string }> = {
-  cyan:    { bg:'bg-teal-500/10',    text:'text-teal-400',    border:'border-teal-500/30',    glow:'shadow-teal-500/15'    },
-  amber:   { bg:'bg-green-500/10',   text:'text-green-400',   border:'border-green-500/30',   glow:'shadow-green-500/15'   },
-  emerald: { bg:'bg-emerald-500/10', text:'text-emerald-400', border:'border-emerald-500/30', glow:'shadow-emerald-500/15' },
-  orange:  { bg:'bg-lime-500/10',    text:'text-lime-400',    border:'border-lime-500/30',    glow:'shadow-lime-500/15'    },
-  violet:  { bg:'bg-teal-600/10',    text:'text-teal-300',    border:'border-teal-600/30',    glow:'shadow-teal-600/15'    },
-  rose:    { bg:'bg-green-600/10',   text:'text-green-500',   border:'border-green-600/30',   glow:'shadow-green-600/15'   },
-  zinc:    { bg:'bg-green-900/20',   text:'text-green-600',   border:'border-green-800/30',   glow:'shadow-green-900/10'   },
+  cyan: { bg: 'bg-teal-500/10', text: 'text-teal-400', border: 'border-teal-500/30', glow: 'shadow-teal-500/15' },
+  amber: { bg: 'bg-green-500/10', text: 'text-green-400', border: 'border-green-500/30', glow: 'shadow-green-500/15' },
+  emerald: { bg: 'bg-emerald-500/10', text: 'text-emerald-400', border: 'border-emerald-500/30', glow: 'shadow-emerald-500/15' },
+  orange: { bg: 'bg-lime-500/10', text: 'text-lime-400', border: 'border-lime-500/30', glow: 'shadow-lime-500/15' },
+  violet: { bg: 'bg-teal-600/10', text: 'text-teal-300', border: 'border-teal-600/30', glow: 'shadow-teal-600/15' },
+  rose: { bg: 'bg-green-600/10', text: 'text-green-500', border: 'border-green-600/30', glow: 'shadow-green-600/15' },
+  zinc: { bg: 'bg-green-900/20', text: 'text-green-600', border: 'border-green-800/30', glow: 'shadow-green-900/10' },
 };
 
 const ECOSYSTEM_COLORS: Record<string, { bg: string; text: string; border: string; glow: string }> = {
-  emerald:  { bg:'bg-emerald-500/10', text:'text-emerald-400', border:'border-emerald-500/30', glow:'shadow-emerald-500/15' },
-  lime:     { bg:'bg-lime-500/10',    text:'text-lime-400',    border:'border-lime-500/30',    glow:'shadow-lime-500/15'    },
-  teal:     { bg:'bg-teal-500/10',    text:'text-teal-400',    border:'border-teal-500/30',    glow:'shadow-teal-500/15'    },
-  green:    { bg:'bg-green-500/10',   text:'text-green-400',   border:'border-green-500/30',   glow:'shadow-green-500/15'   },
-  teal2:    { bg:'bg-teal-600/10',    text:'text-teal-300',    border:'border-teal-600/30',    glow:'shadow-teal-600/15'    },
-  emerald2: { bg:'bg-emerald-600/10', text:'text-emerald-300', border:'border-emerald-600/30', glow:'shadow-emerald-600/15' },
+  emerald: { bg: 'bg-emerald-500/10', text: 'text-emerald-400', border: 'border-emerald-500/30', glow: 'shadow-emerald-500/15' },
+  lime: { bg: 'bg-lime-500/10', text: 'text-lime-400', border: 'border-lime-500/30', glow: 'shadow-lime-500/15' },
+  teal: { bg: 'bg-teal-500/10', text: 'text-teal-400', border: 'border-teal-500/30', glow: 'shadow-teal-500/15' },
+  green: { bg: 'bg-green-500/10', text: 'text-green-400', border: 'border-green-500/30', glow: 'shadow-green-500/15' },
+  teal2: { bg: 'bg-teal-600/10', text: 'text-teal-300', border: 'border-teal-600/30', glow: 'shadow-teal-600/15' },
+  emerald2: { bg: 'bg-emerald-600/10', text: 'text-emerald-300', border: 'border-emerald-600/30', glow: 'shadow-emerald-600/15' },
 };
 
 const ALL_COLORS: Record<string, { bg: string; text: string; border: string; glow: string }> = {
@@ -216,156 +216,156 @@ const ALL_COLORS: Record<string, { bg: string; text: string; border: string; glo
 // ════════════════════════════════════════════════════════════════════════════
 const STATS = [
   {
-    value:67,   suffix:'%',
-    labelId:'Produksi Kakao Bali',   labelEn:'Bali Cacao Production',
-    subId:'berasal dari Jembrana',   subEn:'sourced from Jembrana',
-    detailId:'Jembrana adalah produsen kakao terbesar di Bali, menyumbang 67% total produksi dengan lahan seluas ribuan hektar.',
-    detailEn:'Jembrana is Bali\'s largest cacao producer, contributing 67% of total production across thousands of hectares of farmland.',
-    icon:Leaf,
+    value: 67, suffix: '%',
+    labelId: 'Produksi Kakao Bali', labelEn: 'Bali Cacao Production',
+    subId: 'berasal dari Jembrana', subEn: 'sourced from Jembrana',
+    detailId: 'Jembrana adalah produsen kakao terbesar di Bali, menyumbang 67% total produksi dengan lahan seluas ribuan hektar.',
+    detailEn: 'Jembrana is Bali\'s largest cacao producer, contributing 67% of total production across thousands of hectares of farmland.',
+    icon: Leaf,
   },
   {
-    value:3259, suffix:' ton',
-    labelId:'Produksi per Tahun',    labelEn:'Annual Production',
-    subId:'data BPS Bali 2025',      subEn:'BPS Bali 2025 data',
-    detailId:'Total produksi kakao Jembrana mencapai 3.259 ton per tahun — setara nilai ekspor lebih dari Rp 150 miliar.',
-    detailEn:'Total cacao production in Jembrana reaches 3,259 tons per year — equivalent to export value of over Rp 150 billion.',
-    icon:BarChart3,
+    value: 3259, suffix: ' ton',
+    labelId: 'Produksi per Tahun', labelEn: 'Annual Production',
+    subId: 'data BPS Bali 2025', subEn: 'BPS Bali 2025 data',
+    detailId: 'Total produksi kakao Jembrana mencapai 3.259 ton per tahun — setara nilai ekspor lebih dari Rp 150 miliar.',
+    detailEn: 'Total cacao production in Jembrana reaches 3,259 tons per year — equivalent to export value of over Rp 150 billion.',
+    icon: BarChart3,
   },
   {
-    value:2,    suffix:' ton',
-    labelId:'Ekspor ke Belanda',     labelEn:'Exported to Netherlands',
-    subId:'Agustus 2025',            subEn:'August 2025',
-    detailId:'Pengiriman perdana kakao Single-Origin Jembrana ke Belanda pada Agustus 2025 membuka pintu pasar Eropa.',
-    detailEn:'First shipment of Jembrana Single-Origin cacao to the Netherlands in August 2025 opened the European market door.',
-    icon:Globe,
+    value: 2, suffix: ' ton',
+    labelId: 'Ekspor ke Belanda', labelEn: 'Exported to Netherlands',
+    subId: 'Agustus 2025', subEn: 'August 2025',
+    detailId: 'Pengiriman perdana kakao Single-Origin Jembrana ke Belanda pada Agustus 2025 membuka pintu pasar Eropa.',
+    detailEn: 'First shipment of Jembrana Single-Origin cacao to the Netherlands in August 2025 opened the European market door.',
+    icon: Globe,
   },
   {
-    value:273,  suffix:'K',
-    labelId:'Wisatawan Jembrana',    labelEn:'Jembrana Tourists',
-    subId:'vs 4,2 juta di Badung',   subEn:'vs 4.2M in Badung',
-    detailId:'Hanya 273.000 wisatawan per tahun dibanding 4,2 juta di Badung — kesenjangan 15x yang ingin dijembatani J-SMART CACAO.',
-    detailEn:'Only 273,000 tourists per year compared to 4.2M in Badung — a 15x gap that J-SMART CACAO aims to bridge.',
-    icon:Users,
+    value: 273, suffix: 'K',
+    labelId: 'Wisatawan Jembrana', labelEn: 'Jembrana Tourists',
+    subId: 'vs 4,2 juta di Badung', subEn: 'vs 4.2M in Badung',
+    detailId: 'Hanya 273.000 wisatawan per tahun dibanding 4,2 juta di Badung — kesenjangan 15x yang ingin dijembatani J-SMART CACAO.',
+    detailEn: 'Only 273,000 tourists per year compared to 4.2M in Badung — a 15x gap that J-SMART CACAO aims to bridge.',
+    icon: Users,
   },
 ];
 
 const ECOSYSTEM_STEPS = [
   {
-    icon:Sprout,    color:'emerald',
-    titleId:'Petani Panen',    titleEn:'Farmer Harvest',
-    descId:'Kelompok tani kakao Jembrana memanen biji kakao premium Single-Origin',
-    descEn:'Jembrana cacao farmer groups harvest premium Single-Origin cacao beans',
-    imgSrc: '/images/ecosystem/01-panen.jpg',
+    icon: Sprout, color: 'emerald',
+    titleId: 'Petani Panen', titleEn: 'Farmer Harvest',
+    descId: 'Kelompok tani kakao Jembrana memanen biji kakao premium Single-Origin',
+    descEn: 'Jembrana cacao farmer groups harvest premium Single-Origin cacao beans',
+    imgSrc: '/images/panen.jpg',
     imgAlt: 'Petani memanen kakao Jembrana',
   },
   {
-    icon:Thermometer, color:'lime',
-    titleId:'Smart Dryer IoT', titleEn:'IoT Smart Dryer',
-    descId:'Sensor DHT22 menjaga suhu 45–55°C, data dikirim real-time ke Cloud Ledger',
-    descEn:'DHT22 sensors maintain 45–55°C, data sent real-time to the Cloud Ledger',
+    icon: Thermometer, color: 'lime',
+    titleId: 'Smart Dryer IoT', titleEn: 'IoT Smart Dryer',
+    descId: 'Sensor DHT22 menjaga suhu 45–55°C, data dikirim real-time ke Cloud Ledger',
+    descEn: 'DHT22 sensors maintain 45–55°C, data sent real-time to the Cloud Ledger',
     imgSrc: '/images/ecosystem/02-dryer.jpg',
     imgAlt: 'Smart Dryer IoT unit',
   },
   {
-    icon:Shield,    color:'teal',
-    titleId:'Cloud Ledger',    titleEn:'Cloud Ledger',
-    descId:'Data tamper-proof: suhu, kelembapan, & sertifikasi tersimpan permanen',
-    descEn:'Tamper-proof data: temperature, humidity & certifications stored permanently',
+    icon: Shield, color: 'teal',
+    titleId: 'Cloud Ledger', titleEn: 'Cloud Ledger',
+    descId: 'Data tamper-proof: suhu, kelembapan, & sertifikasi tersimpan permanen',
+    descEn: 'Tamper-proof data: temperature, humidity & certifications stored permanently',
     imgSrc: '/images/ecosystem/03-ledger.jpg',
     imgAlt: 'Cloud Ledger data dashboard',
   },
   {
-    icon:PackageCheck, color:'green',
-    titleId:'Smart Packaging', titleEn:'Smart Packaging',
-    descId:'QR Code unik per batch dicetak di kemasan cokelat artisan premium',
-    descEn:'Unique QR Code per batch printed on premium artisan chocolate packaging',
-    imgSrc: '/images/ecosystem/04-packaging.jpg',
+    icon: PackageCheck, color: 'green',
+    titleId: 'Smart Packaging', titleEn: 'Smart Packaging',
+    descId: 'QR Code unik per batch dicetak di kemasan cokelat artisan premium',
+    descEn: 'Unique QR Code per batch printed on premium artisan chocolate packaging',
+    imgSrc: '/images/solusi-jsmartcacao.png',
     imgAlt: 'Smart packaging dengan QR code',
   },
   {
-    icon:ScanLine,  color:'teal2',
-    titleId:'Scan QR',         titleEn:'Scan QR',
-    descId:'Konsumen scan QR di Bandara/Hotel Bali Selatan, membuka platform ini',
-    descEn:'Consumers scan QR at Bali South airports/hotels, opening this platform',
+    icon: ScanLine, color: 'teal2',
+    titleId: 'Scan QR', titleEn: 'Scan QR',
+    descId: 'Konsumen scan QR di Bandara/Hotel Bali Selatan, membuka platform ini',
+    descEn: 'Consumers scan QR at Bali South airports/hotels, opening this platform',
     imgSrc: '/images/ecosystem/05-scan.jpg',
     imgAlt: 'Scan QR code di hotel Bali',
   },
   {
-    icon:MapPin,    color:'emerald2',
-    titleId:'Agrowisata',      titleEn:'Agrotourism',
-    descId:'Wisatawan tertarik berkunjung langsung ke kebun kakao di Jembrana',
-    descEn:'Tourists are drawn to visit cacao farms directly in Jembrana',
-    imgSrc: '/images/ecosystem/06-agrowisata.jpg',
+    icon: MapPin, color: 'emerald2',
+    titleId: 'Agrowisata', titleEn: 'Agrotourism',
+    descId: 'Wisatawan tertarik berkunjung langsung ke kebun kakao di Jembrana',
+    descEn: 'Tourists are drawn to visit cacao farms directly in Jembrana',
+    imgSrc: '/images/agrowisata.jpg',
     imgAlt: 'Wisatawan mengunjungi kebun kakao',
   },
 ];
 
 const FEATURES = [
-  { icon:QrCode,      color:'teal',    titleId:'Keterlacakan',   titleEn:'Traceability',    en:'Farm-to-Bar Transparency',    descId:'Lacak perjalanan kakao dari kebun petani hingga ke kemasan cokelat di tangan Anda. Ketahui nama petani, lokasi kebun, tanggal panen, dan data kualitas pengeringan.', descEn:"Track cacao from the farmer's field to the chocolate wrapper in your hands. Know the farmer's name, farm location, harvest date, and drying quality data.", href:'/trace',    ctaId:'Lacak Produk',    ctaEn:'Trace Product'   },
-  { icon:Thermometer, color:'lime',    titleId:'Smart Dryer IoT',titleEn:'Smart Dryer IoT', en:'Precision Drying Technology', descId:'Kabinet pengering hibrida 200 kg dengan sensor IoT DHT22, panel surya, dan kendali suhu otomatis. Eliminasi ketergantungan pada cuaca & risiko jamur.',              descEn:'200 kg hybrid drying cabinet with IoT DHT22 sensors, solar panels, and automatic temperature control. Eliminates weather dependency and mold risk.',           href:'/teknologi', ctaId:'Lihat Teknologi', ctaEn:'View Technology'  },
-  { icon:BookOpen,    color:'emerald', titleId:'Edu-Tourism',    titleEn:'Edu-Tourism',     en:'Interactive Education',       descId:'Digital storytelling tentang sejarah kebun, profil petani, sistem Subak Abian, dan proses fermentasi. Mengubah cokelat menjadi portal edukasi interaktif.',       descEn:'Digital storytelling about farm history, farmer profiles, the Subak Abian system, and fermentation. Turns chocolate into an interactive education portal.',    href:'/budaya',    ctaId:'Jelajahi Budaya', ctaEn:'Explore Culture'  },
-  { icon:MapPin,      color:'green',   titleId:'Agrowisata',     titleEn:'Agrotourism',     en:'Cacao Agrotourism',           descId:'Paket wisata pemetikan kakao, edukasi fermentasi, dan kunjungan kebun langsung di Jembrana. Navigasi Google Maps terintegrasi menuju lokasi.',                    descEn:'Cacao harvesting, fermentation education, and farm visit packages in Jembrana. Integrated Google Maps navigation to the location.',                           href:'/wisata',    ctaId:'Pesan Wisata',    ctaEn:'Book a Tour'     },
+  { icon: QrCode, color: 'teal', titleId: 'Keterlacakan', titleEn: 'Traceability', en: 'Farm-to-Bar Transparency', descId: 'Lacak perjalanan kakao dari kebun petani hingga ke kemasan cokelat di tangan Anda. Ketahui nama petani, lokasi kebun, tanggal panen, dan data kualitas pengeringan.', descEn: "Track cacao from the farmer's field to the chocolate wrapper in your hands. Know the farmer's name, farm location, harvest date, and drying quality data.", href: '/trace', ctaId: 'Lacak Produk', ctaEn: 'Trace Product' },
+  { icon: Thermometer, color: 'lime', titleId: 'Smart Dryer IoT', titleEn: 'Smart Dryer IoT', en: 'Precision Drying Technology', descId: 'Kabinet pengering hibrida 200 kg dengan sensor IoT DHT22, panel surya, dan kendali suhu otomatis. Eliminasi ketergantungan pada cuaca & risiko jamur.', descEn: '200 kg hybrid drying cabinet with IoT DHT22 sensors, solar panels, and automatic temperature control. Eliminates weather dependency and mold risk.', href: '/teknologi', ctaId: 'Lihat Teknologi', ctaEn: 'View Technology' },
+  { icon: BookOpen, color: 'emerald', titleId: 'Edu-Tourism', titleEn: 'Edu-Tourism', en: 'Interactive Education', descId: 'Digital storytelling tentang sejarah kebun, profil petani, sistem Subak Abian, dan proses fermentasi. Mengubah cokelat menjadi portal edukasi interaktif.', descEn: 'Digital storytelling about farm history, farmer profiles, the Subak Abian system, and fermentation. Turns chocolate into an interactive education portal.', href: '/budaya', ctaId: 'Jelajahi Budaya', ctaEn: 'Explore Culture' },
+  { icon: MapPin, color: 'green', titleId: 'Agrowisata', titleEn: 'Agrotourism', en: 'Cacao Agrotourism', descId: 'Paket wisata pemetikan kakao, edukasi fermentasi, dan kunjungan kebun langsung di Jembrana. Navigasi Google Maps terintegrasi menuju lokasi.', descEn: 'Cacao harvesting, fermentation education, and farm visit packages in Jembrana. Integrated Google Maps navigation to the location.', href: '/wisata', ctaId: 'Pesan Wisata', ctaEn: 'Book a Tour' },
 ];
 
 const EDU_CHAPTERS = [
   {
-    id:'sejarah', icon:BookOpen, color:'green',
-    tagId:'Bab 1', tagEn:'Chapter 1',
-    titleId:'Sejarah Kebun Kakao Jembrana', titleEn:'History of Jembrana Cacao Farms',
-    imgSrc: '/images/edu/sejarah-kebun.jpg', imgAlt: 'Kebun kakao tua Jembrana era kolonial',
-    bodyId:'Kakao Jembrana telah dibudidayakan sejak era kolonial Belanda pada awal abad ke-20. Kebun-kebun tua di Pekutatan dan Medewi menyimpan pohon kakao berumur lebih dari 80 tahun — warisan langka yang menghasilkan biji Single-Origin dengan profil rasa unik: buah tropis, sedikit asam, dan aftertaste rempah khas Bali.',
-    bodyEn:'Jembrana cacao has been cultivated since the early 20th century Dutch colonial era. Old farms in Pekutatan and Medewi house cacao trees over 80 years old — a rare heritage producing Single-Origin beans with a unique flavor profile: tropical fruit, slight acidity, and a Balinese spice aftertaste.',
-    factsId:['Pohon kakao berusia >80 tahun','Varietas Trinitario & Forastero','Ditanam sejak era kolonial 1920-an'],
-    factsEn:['Cacao trees >80 years old','Trinitario & Forastero varieties','Planted since the 1920s colonial era'],
+    id: 'sejarah', icon: BookOpen, color: 'green',
+    tagId: 'Bab 1', tagEn: 'Chapter 1',
+    titleId: 'Sejarah Kebun Kakao Jembrana', titleEn: 'History of Jembrana Cacao Farms',
+    imgSrc: '/images/sejarah-kebun.png', imgAlt: 'Kebun kakao tua Jembrana era kolonial',
+    bodyId: 'Kakao Jembrana telah dibudidayakan sejak era kolonial Belanda pada awal abad ke-20. Kebun-kebun tua di Pekutatan dan Medewi menyimpan pohon kakao berumur lebih dari 80 tahun — warisan langka yang menghasilkan biji Single-Origin dengan profil rasa unik: buah tropis, sedikit asam, dan aftertaste rempah khas Bali.',
+    bodyEn: 'Jembrana cacao has been cultivated since the early 20th century Dutch colonial era. Old farms in Pekutatan and Medewi house cacao trees over 80 years old — a rare heritage producing Single-Origin beans with a unique flavor profile: tropical fruit, slight acidity, and a Balinese spice aftertaste.',
+    factsId: ['Pohon kakao berusia >80 tahun', 'Varietas Trinitario & Forastero', 'Ditanam sejak era kolonial 1920-an'],
+    factsEn: ['Cacao trees >80 years old', 'Trinitario & Forastero varieties', 'Planted since the 1920s colonial era'],
   },
   {
-    id:'petani', icon:Users, color:'emerald',
-    tagId:'Bab 2', tagEn:'Chapter 2',
-    titleId:'Profil Petani & Komunitas', titleEn:'Farmer & Community Profiles',
-    imgSrc: '/images/edu/profil-petani.jpg', imgAlt: 'Petani kakao Jembrana di kebun',
-    bodyId:'Lebih dari 2.400 kepala keluarga di Jembrana menggantungkan hidup pada budidaya kakao. Rata-rata lahan per petani hanya 0,5–2 hektar, dikelola secara turun-temurun. Platform J-SMART CACAO mengangkat wajah mereka ke permukaan — dari nama petani hingga koordinat GPS kebun.',
-    bodyEn:'Over 2,400 households in Jembrana depend on cacao cultivation. The average farm per farmer is only 0.5–2 hectares, managed hereditarily. The J-SMART CACAO platform brings their faces to the surface — from farmer names to GPS farm coordinates.',
-    factsId:['2.400+ keluarga petani','Rata-rata 0,5–2 ha per petani','Dikelola turun-temurun'],
-    factsEn:['2,400+ farming families','Average 0.5–2 ha per farmer','Managed hereditarily'],
+    id: 'petani', icon: Users, color: 'emerald',
+    tagId: 'Bab 2', tagEn: 'Chapter 2',
+    titleId: 'Profil Petani & Komunitas', titleEn: 'Farmer & Community Profiles',
+    imgSrc: '/images/profil-petani.jpg', imgAlt: 'Petani kakao Jembrana di kebun',
+    bodyId: 'Lebih dari 2.400 kepala keluarga di Jembrana menggantungkan hidup pada budidaya kakao. Rata-rata lahan per petani hanya 0,5–2 hektar, dikelola secara turun-temurun. Platform J-SMART CACAO mengangkat wajah mereka ke permukaan — dari nama petani hingga koordinat GPS kebun.',
+    bodyEn: 'Over 2,400 households in Jembrana depend on cacao cultivation. The average farm per farmer is only 0.5–2 hectares, managed hereditarily. The J-SMART CACAO platform brings their faces to the surface — from farmer names to GPS farm coordinates.',
+    factsId: ['2.400+ keluarga petani', 'Rata-rata 0,5–2 ha per petani', 'Dikelola turun-temurun'],
+    factsEn: ['2,400+ farming families', 'Average 0.5–2 ha per farmer', 'Managed hereditarily'],
   },
   {
-    id:'subak', icon:Leaf, color:'teal',
-    tagId:'Bab 3', tagEn:'Chapter 3',
-    titleId:'Sistem Subak Abian', titleEn:'The Subak Abian System',
-    imgSrc: '/images/edu/subak-abian.jpg', imgAlt: 'Sistem Subak Abian di Jembrana Bali',
-    bodyId:'Subak Abian adalah sistem manajemen pertanian kolektif berbasis adat Bali yang mengatur pola tanam, distribusi air, dan ritual pertanian. Di Jembrana, Subak Abian menjadi tulang punggung koperasi kakao — memastikan standar kualitas dan keadilan distribusi hasil panen secara komunal.',
-    bodyEn:'Subak Abian is a Balinese customary collective agricultural management system regulating planting patterns, water distribution, and agricultural rituals. In Jembrana, it is the backbone of the cacao cooperative — ensuring quality standards and fair harvest distribution communally.',
-    factsId:['Sistem adat Bali tertua','Mengatur pola tanam kolektif','UNESCO Warisan Budaya Dunia 2012'],
-    factsEn:['Oldest Balinese customary system','Regulates collective planting','UNESCO World Cultural Heritage 2012'],
+    id: 'subak', icon: Leaf, color: 'teal',
+    tagId: 'Bab 3', tagEn: 'Chapter 3',
+    titleId: 'Sistem Subak Abian', titleEn: 'The Subak Abian System',
+    imgSrc: '/images/subak-abian.jpg', imgAlt: 'Sistem Subak Abian di Jembrana Bali',
+    bodyId: 'Subak Abian adalah sistem manajemen pertanian kolektif berbasis adat Bali yang mengatur pola tanam, distribusi air, dan ritual pertanian. Di Jembrana, Subak Abian menjadi tulang punggung koperasi kakao — memastikan standar kualitas dan keadilan distribusi hasil panen secara komunal.',
+    bodyEn: 'Subak Abian is a Balinese customary collective agricultural management system regulating planting patterns, water distribution, and agricultural rituals. In Jembrana, it is the backbone of the cacao cooperative — ensuring quality standards and fair harvest distribution communally.',
+    factsId: ['Sistem adat Bali tertua', 'Mengatur pola tanam kolektif', 'UNESCO Warisan Budaya Dunia 2012'],
+    factsEn: ['Oldest Balinese customary system', 'Regulates collective planting', 'UNESCO World Cultural Heritage 2012'],
   },
   {
-    id:'ferment', icon:Thermometer, color:'lime',
-    tagId:'Bab 4', tagEn:'Chapter 4',
-    titleId:'Proses Fermentasi & Pengeringan', titleEn:'Fermentation & Drying Process',
-    imgSrc: '/images/edu/fermentasi.jpg', imgAlt: 'Proses fermentasi biji kakao Jembrana',
-    bodyId:'Fermentasi adalah kunci flavour kakao premium. Biji kakao difermentasi 5–7 hari dalam kotak kayu berlapis pisang. Setelahnya, Smart Dryer IoT mengambil alih — menjaga suhu 45–55°C secara presisi, memangkas waktu pengeringan dari 15–22 hari (cara konvensional) menjadi hanya 3–5 hari dengan kadar air akhir 7% sesuai SNI.',
-    bodyEn:'Fermentation is the key to premium cacao flavor. Cacao beans are fermented for 5–7 days in banana-lined wooden boxes. Afterward, the IoT Smart Dryer takes over — precisely maintaining 45–55°C, cutting drying time from 15–22 days (conventional) to just 3–5 days with a final moisture content of 7% per SNI standard.',
-    factsId:['Fermentasi 5–7 hari alami','Smart Dryer: 3–5 hari','Kadar air akhir 7% (SNI 2323:2008)'],
-    factsEn:['Natural 5–7 day fermentation','Smart Dryer: 3–5 days','Final moisture content 7% (SNI 2323:2008)'],
+    id: 'ferment', icon: Thermometer, color: 'lime',
+    tagId: 'Bab 4', tagEn: 'Chapter 4',
+    titleId: 'Proses Fermentasi & Pengeringan', titleEn: 'Fermentation & Drying Process',
+    imgSrc: '/images/fermentasi.png', imgAlt: 'Proses fermentasi biji kakao Jembrana',
+    bodyId: 'Fermentasi adalah kunci flavour kakao premium. Biji kakao difermentasi 5–7 hari dalam kotak kayu berlapis pisang. Setelahnya, Smart Dryer IoT mengambil alih — menjaga suhu 45–55°C secara presisi, memangkas waktu pengeringan dari 15–22 hari (cara konvensional) menjadi hanya 3–5 hari dengan kadar air akhir 7% sesuai SNI.',
+    bodyEn: 'Fermentation is the key to premium cacao flavor. Cacao beans are fermented for 5–7 days in banana-lined wooden boxes. Afterward, the IoT Smart Dryer takes over — precisely maintaining 45–55°C, cutting drying time from 15–22 days (conventional) to just 3–5 days with a final moisture content of 7% per SNI standard.',
+    factsId: ['Fermentasi 5–7 hari alami', 'Smart Dryer: 3–5 hari', 'Kadar air akhir 7% (SNI 2323:2008)'],
+    factsEn: ['Natural 5–7 day fermentation', 'Smart Dryer: 3–5 days', 'Final moisture content 7% (SNI 2323:2008)'],
   },
 ];
 
 const PARTNERS = [
-  { name:'KUD Jembrana',          roleId:'Operator SmartDryer & Kualitas', roleEn:'SmartDryer Operator & Quality',    emoji:'🏭' },
-  { name:'Dinas Pariwisata Bali', roleId:'Dukungan Kebijakan & Promosi',   roleEn:'Policy Support & Promotion',       emoji:'🏛️' },
-  { name:'Dinas Pertanian Bali',  roleId:'Sertifikasi & Standar Mutu',     roleEn:'Certification & Quality Standards',emoji:'🌾' },
-  { name:'Hotel & Bandara',       roleId:'Distribusi Smart Packaging',     roleEn:'Smart Packaging Distribution',     emoji:'✈️' },
-  { name:'Universitas Udayana',   roleId:'Riset & Pengembangan Teknologi', roleEn:'Research & Technology Development',emoji:'🎓' },
-  { name:'Pengrajin Artisan',     roleId:'Produksi Cokelat Premium',       roleEn:'Premium Chocolate Production',     emoji:'🍫' },
+  { name: 'KUD Jembrana', roleId: 'Operator SmartDryer & Kualitas', roleEn: 'SmartDryer Operator & Quality', emoji: '🏭' },
+  { name: 'Dinas Pariwisata Bali', roleId: 'Dukungan Kebijakan & Promosi', roleEn: 'Policy Support & Promotion', emoji: '🏛️' },
+  { name: 'Dinas Pertanian Bali', roleId: 'Sertifikasi & Standar Mutu', roleEn: 'Certification & Quality Standards', emoji: '🌾' },
+  { name: 'Hotel & Bandara', roleId: 'Distribusi Smart Packaging', roleEn: 'Smart Packaging Distribution', emoji: '✈️' },
+  { name: 'Universitas Udayana', roleId: 'Riset & Pengembangan Teknologi', roleEn: 'Research & Technology Development', emoji: '🎓' },
+  { name: 'Pengrajin Artisan', roleId: 'Produksi Cokelat Premium', roleEn: 'Premium Chocolate Production', emoji: '🍫' },
 ];
 
 // ════════════════════════════════════════════════════════════════════════════
 // PHOTO PLACEHOLDER
 // ════════════════════════════════════════════════════════════════════════════
 function PhotoSlot({
-  src, alt, className = '', aspectRatio = 'aspect-video', label,
+  src, alt, className = '', aspectRatio = 'aspect-video', label, objectFit = 'cover'
 }: {
-  src?: string; alt?: string; className?: string; aspectRatio?: string; label?: string;
+  src?: string; alt?: string; className?: string; aspectRatio?: string; label?: string; objectFit?: 'cover' | 'contain' | 'fill'
 }) {
   const [err, setErr] = useState(false);
   const showPlaceholder = !src || err;
@@ -373,7 +373,7 @@ function PhotoSlot({
     <div className={`relative overflow-hidden rounded-2xl ${aspectRatio} ${className}`}>
       {!showPlaceholder ? (
         <img src={src} alt={alt ?? ''} onError={() => setErr(true)}
-          className="absolute inset-0 w-full h-full object-cover" />
+          className={`absolute inset-0 w-full h-full object-${objectFit}`} />
       ) : (
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-3
           bg-gradient-to-br from-emerald-950/80 via-green-900/60 to-teal-900/50
@@ -393,30 +393,30 @@ function PhotoSlot({
 // ════════════════════════════════════════════════════════════════════════════
 // HELPER COMPONENTS
 // ════════════════════════════════════════════════════════════════════════════
-function FadeIn({ children, delay=0, className='', direction='up' }: {
-  children:React.ReactNode; delay?:number; className?:string;
-  direction?:'up'|'left'|'right'|'none';
+function FadeIn({ children, delay = 0, className = '', direction = 'up' }: {
+  children: React.ReactNode; delay?: number; className?: string;
+  direction?: 'up' | 'left' | 'right' | 'none';
 }) {
-  const ref    = useRef(null);
-  const inView = useInView(ref, { once:true, margin:'-60px' });
-  const ini    = direction==='up'    ? {opacity:0,y:28}
-               : direction==='left'  ? {opacity:0,x:-28}
-               : direction==='right' ? {opacity:0,x:28}
-               :                       {opacity:0};
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-60px' });
+  const ini = direction === 'up' ? { opacity: 0, y: 28 }
+    : direction === 'left' ? { opacity: 0, x: -28 }
+      : direction === 'right' ? { opacity: 0, x: 28 }
+        : { opacity: 0 };
   return (
     <motion.div ref={ref} initial={ini}
-      animate={inView ? {opacity:1,y:0,x:0} : ini}
-      transition={{duration:0.6, delay, ease:[0.22,1,0.36,1]}}
+      animate={inView ? { opacity: 1, y: 0, x: 0 } : ini}
+      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}>
       {children}
     </motion.div>
   );
 }
 
-function AnimatedCounter({ target, suffix='' }: { target:number; suffix?:string }) {
+function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: string }) {
   const [count, setCount] = useState(0);
-  const ref    = useRef(null);
-  const inView = useInView(ref, {once:true});
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
   useEffect(() => {
     if (!inView) return;
     const step = target / 60; let cur = 0;
@@ -483,7 +483,7 @@ function Carousel3D({ items, isDark, isId }: { items: typeof ECOSYSTEM_STEPS; is
 
   const getAngle = (idx: number) => ((idx - current + total) % total) * (360 / total);
   const getItemPos = (angle: number) => {
-    const rad    = (angle * Math.PI) / 180;
+    const rad = (angle * Math.PI) / 180;
     const radius = 280;
     return { x: Math.sin(rad) * radius, z: -Math.cos(rad) * radius };
   };
@@ -518,16 +518,16 @@ function Carousel3D({ items, isDark, isId }: { items: typeof ECOSYSTEM_STEPS; is
       >
         <div style={{ position: 'absolute', inset: 0, transformStyle: 'preserve-3d' }}>
           {items.map((step, idx) => {
-            const angle    = getAngle(idx);
-            const { x }    = getItemPos(angle);
-            const isFront  = idx === current;
-            const dist     = Math.min(Math.abs(idx - current), total - Math.abs(idx - current));
-            const isAdj    = dist === 1;
-            const scale    = isFront ? 1 : isAdj ? 0.8 : 0.65;
-            const opacity  = isFront ? 1 : isAdj ? 0.55 : 0.22;
+            const angle = getAngle(idx);
+            const { x } = getItemPos(angle);
+            const isFront = idx === current;
+            const dist = Math.min(Math.abs(idx - current), total - Math.abs(idx - current));
+            const isAdj = dist === 1;
+            const scale = isFront ? 1 : isAdj ? 0.8 : 0.65;
+            const opacity = isFront ? 1 : isAdj ? 0.55 : 0.22;
             const overlayOpacity = isFront ? 0 : isAdj ? 0.72 : 0.88;
             const Icon = step.icon;
-            const c    = ALL_COLORS[step.color] ?? ALL_COLORS.emerald;
+            const c = ALL_COLORS[step.color] ?? ALL_COLORS.emerald;
 
             return (
               <motion.div key={step.titleId}
@@ -600,7 +600,7 @@ function Carousel3D({ items, isDark, isId }: { items: typeof ECOSYSTEM_STEPS; is
         <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={prev}
           className={`w-10 h-10 rounded-full border flex items-center justify-center transition-colors
             ${isDark ? 'border-[#2a2a2a] hover:border-emerald-600 text-zinc-400 hover:text-emerald-400 bg-[#111]'
-                     : 'border-gray-200 hover:border-emerald-400 text-zinc-500 hover:text-emerald-600 bg-white'}`}
+              : 'border-gray-200 hover:border-emerald-400 text-zinc-500 hover:text-emerald-600 bg-white'}`}
         ><ChevronLeft size={18} /></motion.button>
         <div className="flex gap-2">
           {items.map((_, i) => (
@@ -614,7 +614,7 @@ function Carousel3D({ items, isDark, isId }: { items: typeof ECOSYSTEM_STEPS; is
         <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={next}
           className={`w-10 h-10 rounded-full border flex items-center justify-center transition-colors
             ${isDark ? 'border-[#2a2a2a] hover:border-emerald-600 text-zinc-400 hover:text-emerald-400 bg-[#111]'
-                     : 'border-gray-200 hover:border-emerald-400 text-zinc-500 hover:text-emerald-600 bg-white'}`}
+              : 'border-gray-200 hover:border-emerald-400 text-zinc-500 hover:text-emerald-600 bg-white'}`}
         ><ChevronRight size={18} /></motion.button>
       </div>
     </div>
@@ -633,13 +633,12 @@ function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <PhotoSlot src="/images/hero/kebun-jembrana.jpg" alt="Kebun kakao Jembrana Bali"
+        <PhotoSlot src="/images/kttmertaabadi.jpeg" alt="Kebun kakao Jembrana Bali"
           aspectRatio="" className="!rounded-none absolute inset-0 w-full h-full"
           label="📸 Foto Kebun Kakao Jembrana · 1920×1080 px" />
-        <div className={`absolute inset-0 ${
-          isDark ? 'bg-gradient-to-b from-black/70 via-black/60 to-[#0a0a0a]'
-                 : 'bg-gradient-to-b from-black/50 via-black/30 to-white/90'
-        }`} />
+        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-b from-black/70 via-black/60 to-[#0a0a0a]'
+          : 'bg-gradient-to-b from-black/50 via-black/30 to-white/90'
+          }`} />
         <div className={`absolute inset-0 ${st.grid} bg-[size:64px_64px] opacity-30`} />
       </div>
 
@@ -650,8 +649,8 @@ function HeroSection() {
       </div>
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        <motion.h1 initial={{opacity:0,y:-16}} animate={{opacity:1,y:0}}
-          transition={{delay:0.35, duration:0.8, ease:[0.22,1,0.36,1]}}
+        <motion.h1 initial={{ opacity: 0, y: -16 }} animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.35, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none mb-4 text-white drop-shadow-2xl"
         >
           {t.headline}{' '}
@@ -659,7 +658,7 @@ function HeroSection() {
           <br /><span className="text-white">{t.headline2}</span>
         </motion.h1>
 
-        <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.55}}
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.55 }}
           className="mt-4 sm:mt-6 text-base sm:text-lg text-center max-w-2xl mx-auto leading-relaxed px-2 text-white/75 drop-shadow-lg"
         >
           {t.subtitle}{' '}
@@ -670,11 +669,11 @@ function HeroSection() {
           {t.subtitleConj}
         </motion.p>
 
-        <motion.div initial={{opacity:0,y:16}} animate={{opacity:1,y:0}} transition={{delay:0.7}}
+        <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }}
           className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <Link href="/wisata" className="w-full sm:w-auto">
-            <motion.button whileHover={{scale:1.04}} whileTap={{scale:0.96}}
+            <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
               className="w-full sm:w-auto group flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-green-500 hover:from-emerald-500 hover:to-green-400 text-white font-bold text-sm sm:text-base shadow-2xl shadow-emerald-500/30 hover:shadow-emerald-500/50 transition-all"
             >
               <MapPin size={17} /> {t.cta1}
@@ -682,7 +681,7 @@ function HeroSection() {
             </motion.button>
           </Link>
           <Link href="/trace" className="w-full sm:w-auto">
-            <motion.button whileHover={{scale:1.04}} whileTap={{scale:0.96}}
+            <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
               className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-sm hover:bg-white/20 font-bold text-sm sm:text-base text-white transition-all"
             >
               <QrCode size={17} className="text-emerald-300" /> {t.cta2}
@@ -691,7 +690,7 @@ function HeroSection() {
         </motion.div>
 
         {/* Quick trace */}
-        <motion.div initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{delay:0.9}}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }}
           className="mt-8 sm:mt-12 max-w-md mx-auto px-2 sm:px-0"
         >
           <p className="text-xs mb-2 flex items-center justify-center gap-1 text-white/50">
@@ -700,7 +699,7 @@ function HeroSection() {
           <div className="flex gap-2">
             <input type="text" placeholder={t.qrPlaceholder} value={batch}
               onChange={e => setBatch(e.target.value)}
-              onKeyDown={e => { if (e.key==='Enter' && batch.trim()) window.location.href=`/trace?batch=${batch.trim()}`; }}
+              onKeyDown={e => { if (e.key === 'Enter' && batch.trim()) window.location.href = `/trace?batch=${batch.trim()}`; }}
               className="flex-1 min-w-0 px-4 py-3 rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-emerald-400/60 transition-colors"
             />
             <Link href={batch.trim() ? `/trace?batch=${batch.trim()}` : '/trace'}>
@@ -713,11 +712,11 @@ function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.2}}
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}
         className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
         <span className="text-[10px] tracking-widest uppercase text-white/40">{t.scrollLabel}</span>
-        <motion.div animate={{y:[0,8,0]}} transition={{duration:1.5, repeat:Infinity}}
+        <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 1.5, repeat: Infinity }}
           className="w-px h-6 sm:h-8 bg-gradient-to-b from-emerald-400/60 to-transparent" />
       </motion.div>
     </section>
@@ -803,12 +802,12 @@ function ProblemSection() {
 
       <div className="grid md:grid-cols-2 gap-6 sm:gap-10 items-start mb-16 sm:mb-24">
         <FadeIn direction="left">
-          <PhotoSlot src="/images/problem/paradoks-bali.jpg"
+          <PhotoSlot src="/images/paradoks.png"
             alt="Paradoks pariwisata Bali — Badung vs Jembrana" aspectRatio="aspect-[4/3]"
             label="📸 Foto Paradoks Bali · kebun kakao sepi vs pantai Badung ramai" />
           <p className={`text-xs mt-3 text-center ${st.dim}`}>
             {isId ? 'Kebun kakao Jembrana — penghasil 67% kakao Bali — sepi wisatawan'
-                  : 'Jembrana cacao farms — producing 67% of Bali\'s cacao — undervisited'}
+              : 'Jembrana cacao farms — producing 67% of Bali\'s cacao — undervisited'}
           </p>
         </FadeIn>
 
@@ -825,7 +824,7 @@ function ProblemSection() {
             </p>
             <div className="space-y-3 pt-2">
               {[
-                { label: 'Badung',   val: '100%', count: '4.281.648',     color: 'bg-gradient-to-r from-emerald-600 to-green-500' },
+                { label: 'Badung', val: '100%', count: '4.281.648', color: 'bg-gradient-to-r from-emerald-600 to-green-500' },
                 { label: 'Jembrana', val: '6.4%', count: '273.142 (<7%)', color: 'bg-green-700' },
               ].map((b, i) => (
                 <div key={i}>
@@ -864,13 +863,13 @@ function ProblemSection() {
             </div>
             <div className="space-y-3 sm:space-y-4 pt-1">
               {[
-                { icon: Thermometer, color: 'lime'    },
-                { icon: Shield,      color: 'teal'    },
-                { icon: QrCode,      color: 'green'   },
-                { icon: MapPin,      color: 'emerald' },
+                { icon: Thermometer, color: 'lime' },
+                { icon: Shield, color: 'teal' },
+                { icon: QrCode, color: 'green' },
+                { icon: MapPin, color: 'emerald' },
               ].map((item, i) => {
                 const Icon = item.icon;
-                const c    = ALL_COLORS[item.color];
+                const c = ALL_COLORS[item.color];
                 return (
                   <motion.div key={i} className="flex gap-3 group"
                     whileHover={{ x: 4 }} transition={{ type: 'spring', stiffness: 400, damping: 25 }}>
@@ -888,12 +887,12 @@ function ProblemSection() {
         </FadeIn>
 
         <FadeIn direction="right" delay={0.15}>
-          <PhotoSlot src="/images/problem/solusi-jsmartcacao.jpg"
-            alt="Solusi J-SMART CACAO — Smart Dryer dan ekosistem digital" aspectRatio="aspect-[4/3]"
-            label="📸 Foto Solusi J-SMART CACAO · Smart Dryer / petani + teknologi" />
+          <img src="/images/solusi-jsmartcacao.png"
+            alt="Solusi J-SMART CACAO — Smart Dryer dan ekosistem digital"
+            className="w-full h-auto object-contain" />
           <p className={`text-xs mt-3 text-center ${st.dim}`}>
-            {isId ? 'Smart Dryer IoT — pengeringan presisi tanpa ketergantungan cuaca'
-                  : 'IoT Smart Dryer — precision drying without weather dependency'}
+            {isId ? 'Kemasan Pintar — pengeringan presisi tanpa ketergantungan cuaca'
+              : 'IoT Smart Dryer — precision drying without weather dependency'}
           </p>
         </FadeIn>
       </div>
@@ -998,11 +997,11 @@ function TraceTeaserSection() {
           <p className={`text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed max-w-lg mx-auto ${st.body}`}>{t.traceSub}</p>
           <div className="flex gap-2 sm:gap-3 max-w-md mx-auto mb-5">
             <input type="text" placeholder={t.qrPlaceholder} value={input} onChange={e => setInput(e.target.value)}
-              onKeyDown={e => { if (e.key==='Enter') window.location.href=`/trace?batch=${input.trim()}`; }}
+              onKeyDown={e => { if (e.key === 'Enter') window.location.href = `/trace?batch=${input.trim()}`; }}
               className={`flex-1 min-w-0 px-4 py-3 sm:py-4 rounded-xl sm:rounded-2xl border text-sm focus:outline-none transition-colors ${st.input}`}
             />
             <Link href={`/trace?batch=${input.trim()}`}>
-              <motion.button whileHover={{scale:1.04}} whileTap={{scale:0.96}}
+              <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
                 className="flex-shrink-0 px-4 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl bg-teal-600 hover:bg-teal-500 text-white font-bold transition-colors flex items-center gap-2"
               >
                 <Search size={18} /><span className="hidden sm:inline">{t.traceLacak}</span>
@@ -1011,7 +1010,7 @@ function TraceTeaserSection() {
           </div>
           <div className="flex flex-wrap justify-center gap-2 mb-5">
             <p className={`text-xs w-full mb-1 ${st.dim}`}>{t.traceExamples}</p>
-            {['JSC-2025-001','JSC-2025-042','JSC-2024-187'].map(code => (
+            {['JSC-2025-001', 'JSC-2025-042', 'JSC-2024-187'].map(code => (
               <motion.button key={code} onClick={() => setInput(code)}
                 whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
                 className={`px-3 py-1.5 rounded-lg border text-xs font-mono transition-all ${st.codeChip}
@@ -1074,7 +1073,7 @@ function EduTourismSection() {
       <AnimatePresence mode="wait">
         {EDU_CHAPTERS.map((ch, i) => {
           if (i !== active) return null;
-          const c    = ALL_COLORS[ch.color] ?? ALL_COLORS.emerald;
+          const c = ALL_COLORS[ch.color] ?? ALL_COLORS.emerald;
           const Icon = ch.icon;
           return (
             <motion.div key={ch.id}
@@ -1135,11 +1134,10 @@ function EduTourismSection() {
                     <div className="flex gap-1.5">
                       {EDU_CHAPTERS.map((_, j) => (
                         <button key={j} onClick={() => setActive(j)}
-                          className={`rounded-full transition-all ${
-                            j === active
-                              ? `w-5 h-1.5 ${c.text.replace('text-', 'bg-')}`
-                              : `w-1.5 h-1.5 ${isDark ? 'bg-[#2a2a2a] hover:bg-[#3a3a3a]' : 'bg-gray-300 hover:bg-gray-400'}`
-                          }`}
+                          className={`rounded-full transition-all ${j === active
+                            ? `w-5 h-1.5 ${c.text.replace('text-', 'bg-')}`
+                            : `w-1.5 h-1.5 ${isDark ? 'bg-[#2a2a2a] hover:bg-[#3a3a3a]' : 'bg-gray-300 hover:bg-gray-400'}`
+                            }`}
                         />
                       ))}
                     </div>
@@ -1170,7 +1168,7 @@ function EduTourismSection() {
             <p className={`text-xs sm:text-sm ${st.body}`}>{t.eduCtaDesc}</p>
           </div>
           <Link href="/budaya" className="flex-shrink-0 w-full sm:w-auto">
-            <motion.button whileHover={{scale:1.04}} whileTap={{scale:0.96}}
+            <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
               className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm font-bold hover:bg-emerald-500/20 transition-all"
             ><ExternalLink size={14} />{t.eduCtaBtn}</motion.button>
           </Link>
@@ -1221,12 +1219,12 @@ function CTASection() {
             <p className={`max-w-lg mx-auto mb-8 leading-relaxed text-sm sm:text-base ${st.body}`}>{t.ctaDesc}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/trace">
-                <motion.button whileHover={{scale:1.04}} whileTap={{scale:0.96}}
+                <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
                   className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-500 hover:to-emerald-400 text-white font-bold shadow-2xl shadow-green-500/25 transition-all"
                 ><QrCode size={18} />{t.ctaBtn1}</motion.button>
               </Link>
               <Link href="/wisata">
-                <motion.button whileHover={{scale:1.04}} whileTap={{scale:0.96}}
+                <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
                   className={`flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl border font-bold transition-all ${st.ghostBtn}`}
                 ><MapPin size={18} className="text-emerald-400" />{t.ctaBtn2}</motion.button>
               </Link>
@@ -1251,8 +1249,8 @@ export default function HomePage() {
 
   const isDark = !mounted || theme === 'dark';
   // FIXED: isId sepenuhnya diatur oleh `lang`, bukan oleh `isDark`
-  const isId   = !mounted || (lang as Lang) === 'id';
-  const t      = mounted ? COPY[lang as Lang] ?? COPY.id : COPY.id;
+  const isId = !mounted || (lang as Lang) === 'id';
+  const t = mounted ? COPY[lang as Lang] ?? COPY.id : COPY.id;
 
   return (
     <ThemeCtx.Provider value={{ isDark, isId, t }}>

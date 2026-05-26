@@ -7,26 +7,26 @@ import { useUIStore } from '@/store/useUIStore';
 import { Suspense } from 'react';
 
 const NAV_LINKS = [
-  { href: '/',         label_id: 'Beranda',  label_en: 'Home'    },
-  { href: '/trace',    label_id: 'Trace',    label_en: 'Trace'   },
+  { href: '/', label_id: 'Beranda', label_en: 'Home' },
+  { href: '/trace', label_id: 'Trace', label_en: 'Trace' },
   { href: '/telusuri', label_id: 'Telusuri', label_en: 'Explore' },
-  { href: '/budaya',   label_id: 'Budaya',   label_en: 'Culture' },
+  { href: '/budaya', label_id: 'Budaya', label_en: 'Culture' },
 ];
 
 const COPY = {
   id: {
-    tagline:  'Platform inovatif untuk petani kakao Jembrana — menghubungkan tradisi dengan teknologi.',
-    nav:      'Navigasi',
-    contact:  'Kontak',
-    rights:   '© 2025 J-Smart Cacao. Hak cipta dilindungi.',
-    built:    'Dibangun bersama Universitas Udayana',
+    tagline: 'Platform inovatif untuk petani kakao Jembrana — menghubungkan tradisi dengan teknologi.',
+    nav: 'Navigasi',
+    contact: 'Kontak',
+    rights: '© 2025 J-Smart Cacao. Hak cipta dilindungi.',
+    built: 'Dibangun bersama Universitas Udayana',
   },
   en: {
-    tagline:  'Innovative platform for Jembrana cacao farmers — bridging tradition with technology.',
-    nav:      'Navigation',
-    contact:  'Contact',
-    rights:   '© 2025 J-Smart Cacao. All rights reserved.',
-    built:    'Built with Universitas Udayana',
+    tagline: 'Innovative platform for Jembrana cacao farmers — bridging tradition with technology.',
+    nav: 'Navigation',
+    contact: 'Contact',
+    rights: '© 2025 J-Smart Cacao. All rights reserved.',
+    built: 'Built with Universitas Udayana',
   },
 };
 
@@ -38,14 +38,13 @@ function FooterNav({ lang, colorClass }: { lang: 'id' | 'en'; colorClass: { body
     <nav className="flex flex-col gap-1">
       {NAV_LINKS.map((link) => {
         const isActive = pathname === link.href;
-        const label    = lang === 'id' ? link.label_id : link.label_en;
+        const label = lang === 'id' ? link.label_id : link.label_en;
         return (
           <Link key={link.href} href={link.href}
-            className={`inline-flex items-center gap-1.5 py-1 text-sm transition-colors duration-150 group ${
-              isActive
-                ? 'text-emerald-500 font-semibold'
-                : `${colorClass.body} ${colorClass.hover} font-normal`
-            }`}
+            className={`inline-flex items-center gap-1.5 py-1 text-sm transition-colors duration-150 group ${isActive
+              ? 'text-emerald-500 font-semibold'
+              : `${colorClass.body} ${colorClass.hover} font-normal`
+              }`}
           >
             {isActive && <span className="w-1 h-1 rounded-full bg-emerald-500 flex-shrink-0" />}
             {label}
@@ -64,12 +63,12 @@ export default function Footer() {
   const isDark = theme === 'dark';
   const c = COPY[lang];
 
-  const base    = isDark ? 'bg-zinc-950 border-zinc-800/60'  : 'bg-white border-zinc-200';
-  const muted   = isDark ? 'text-zinc-500'                   : 'text-zinc-400';
-  const body    = isDark ? 'text-zinc-400'                   : 'text-zinc-500';
-  const head    = isDark ? 'text-white'                      : 'text-zinc-900';
-  const hover   = isDark ? 'hover:text-white'                : 'hover:text-zinc-900';
-  const divider = isDark ? 'border-zinc-800/60'              : 'border-zinc-100';
+  const base = isDark ? 'bg-zinc-950 border-zinc-800/60' : 'bg-white border-zinc-200';
+  const muted = isDark ? 'text-zinc-500' : 'text-zinc-400';
+  const body = isDark ? 'text-zinc-400' : 'text-zinc-500';
+  const head = isDark ? 'text-white' : 'text-zinc-900';
+  const hover = isDark ? 'hover:text-white' : 'hover:text-zinc-900';
+  const divider = isDark ? 'border-zinc-800/60' : 'border-zinc-100';
   const iconBtn = isDark
     ? 'bg-zinc-900 border-zinc-700/60 text-zinc-400 hover:border-emerald-600/40 hover:text-emerald-400'
     : 'bg-zinc-50 border-zinc-200 text-zinc-400 hover:border-emerald-500/50 hover:text-emerald-600';
@@ -82,9 +81,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-5">
             <Link href="/" className="inline-flex items-center gap-3 mb-4 group">
-              <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-500 flex items-center justify-center shadow-lg shadow-emerald-500/25 group-hover:shadow-emerald-500/40 transition-shadow">
-                <Leaf size={16} className="text-white" />
-              </div>
+              <img
+                src="/images/logo.png"
+                alt="Logo J-Smart Cacao"
+                className="w-10 h-10 object-contain"
+              />
               <span className={`font-bold text-xl tracking-tight ${head} transition-colors`}>
                 J-SMART <span className="text-emerald-500">CACAO</span>
               </span>
@@ -92,8 +93,8 @@ export default function Footer() {
             <p className={`text-sm leading-relaxed max-w-xs ${body}`}>{c.tagline}</p>
             <div className="flex gap-2 mt-5">
               {[
-                { Icon: Globe,        label: 'Website',  href: '#' },
-                { Icon: Mail,         label: 'Email',    href: 'mailto:hello@jsmartcacao.id' },
+                { Icon: Globe, label: 'Website', href: '#' },
+                { Icon: Mail, label: 'Email', href: 'mailto:hello@jsmartcacao.id' },
                 { Icon: ExternalLink, label: 'External', href: '#' },
               ].map(({ Icon, label, href }) => (
                 <a key={label} href={href} aria-label={label}

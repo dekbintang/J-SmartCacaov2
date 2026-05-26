@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useUIStore } from '@/store/useUIStore';
 
 export default function Navbar() {
@@ -42,9 +42,12 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-11 h-11 bg-gradient-to-br from-emerald-600 to-teal-500 rounded-3xl flex items-center justify-center shadow-xl shadow-emerald-500/40">
-            <Leaf className="w-7 h-7 text-white" />
-          </div>
+          {/* Ganti "logo.png" dengan nama file gambar aslimu di folder public/images/ */}
+          <img 
+            src="/images/logo.png" 
+            alt="Logo J-Smart Cacao" 
+            className="w-12 h-12 object-contain" 
+          />
           <div className="font-bold text-3xl tracking-[-2px]">
             <span className="text-zinc-900 dark:text-white transition-colors duration-300">J-SMART</span>
             <span className="text-emerald-600">CACAO</span>
