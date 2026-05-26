@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 15 23 42;
+    --glass: 255 255 255 / 0.7;
+  }
+  
+  .dark {
+    --background: 15 23 42;
+    --foreground: 241 245 249;
+    --glass: 15 23 42 / 0.7;
+  }
+}
+
+body {
+  font-feature-settings: "kern" 1, "tnum" 1;
+}
