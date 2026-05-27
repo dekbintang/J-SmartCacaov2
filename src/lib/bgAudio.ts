@@ -22,19 +22,33 @@ function notify() {
 export const bgAudio = {
   // ── WAJIB dipanggil dari user gesture (click handler) ──────────────────
   // Kalau dipanggil di luar user gesture → browser blokir
-  async start(volume = 0.55): Promise<void> {
+  start(volume = 0.55) {
     if (typeof window === 'undefined') return;
+    if (_audio) return; // Prevent multiple start calls
+
     _vol   = volume;
     _audio = new Audio(TRACKS[_idx].src);
     _audio.volume = volume;
-    _audio.preload = 'metadata';
+    _audio.preload = 'auto'; // Change to auto to start downloading earlier
 
     _audio.addEventListener('ended', () => {
       this.next();
     });
 
-    await _audio.play();
-    notify();
+    // Synchronously call play to keep user gesture context intact
+    const playPromise = _audio.play();
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          notify();
+        })
+        .catch(err => {
+          console.error("Autoplay prevented:", err);
+          notify();
+        });
+    } else {
+      notify();
+    }
   },
 
   // ── Getter ──────────────────────────────────────────────────────────────

@@ -13,7 +13,7 @@ export function ClientWrapper({ children }: { children: React.ReactNode }) {
   useEffect(() => { const timer = setTimeout(() => setMounted(true), 0); return () => clearTimeout(timer); }, []);
 
   const handleEnter = () => {
-    bgAudio.start(0.55).catch(() => {});
+    bgAudio.start(0.55);
     setEntered(true);
   };
 
