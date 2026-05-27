@@ -35,6 +35,8 @@ export const bgAudio = {
       this.next();
     });
 
+    _audio.load(); // Force load before play
+
     // Synchronously call play to keep user gesture context intact
     const playPromise = _audio.play();
     if (playPromise !== undefined) {
