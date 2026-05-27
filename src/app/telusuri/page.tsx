@@ -336,7 +336,7 @@ function DetailModal({ spot, isDark, c, onClose, currentLang }: {
           </div>
         </div>
 
-        <div className="p-5 space-y-5">
+        <div className="p-5 pb-32 sm:pb-12 space-y-5">
           <div className="flex flex-wrap gap-2">
             {spot.isFeatured && (
               <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-900/40 border border-emerald-200 dark:border-emerald-700/50 text-emerald-600 dark:text-emerald-400 text-xs font-semibold">
@@ -438,7 +438,6 @@ function DetailModal({ spot, isDark, c, onClose, currentLang }: {
             </motion.button>
           )}
 
-          <div className="h-28 sm:h-6" />
         </div>
       </motion.div>
     </div>

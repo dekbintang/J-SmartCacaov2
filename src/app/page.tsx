@@ -1238,7 +1238,7 @@ export default function HomePage() {
 
   return (
     <ThemeCtx.Provider value={{ isDark, isId, t }}>
-      <main className={`min-h-screen transition-colors duration-300 ${isDark ? 'bg-[#0a0a0a]' : 'bg-white'}`}>
+      <main className={`min-h-screen w-full overflow-x-hidden transition-colors duration-300 ${isDark ? 'bg-[#0a0a0a]' : 'bg-white'}`}>
         <HeroSection />
         <StatsSection />
         <ProblemSection />
