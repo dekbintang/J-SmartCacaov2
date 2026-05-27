@@ -459,7 +459,7 @@ function FloatingStats({ spots, isDark, currentLang }: { spots: TourismSpot[]; i
   ];
 
   return (
-    <div className="flex sm:grid sm:grid-cols-4 gap-3 max-w-3xl mx-auto overflow-x-auto pb-4 sm:pb-0 snap-x hide-scrollbar px-4 sm:px-0 -mx-4 sm:mx-auto">
+    <div className="flex sm:grid sm:grid-cols-4 gap-3 max-w-3xl mx-auto overflow-x-auto pb-4 sm:pb-0 snap-x hide-scrollbar">
       {stats.map((stat, i) => (
         <motion.div
           key={stat.label}
