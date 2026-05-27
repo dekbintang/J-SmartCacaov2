@@ -19,8 +19,8 @@ export default function TeknologiPage() {
       ? 'J-SMART CACAO menghadirkan revolusi dalam pengolahan pascapanen kakao. Smart Dryer kami menggunakan kombinasi energi surya dan pemanas cadangan presisi yang dikendalikan oleh sensor IoT (Internet of Things).'
       : 'J-SMART CACAO brings a revolution to post-harvest cacao processing. Our Smart Dryer uses a combination of solar energy and precision backup heating controlled by IoT sensors.',
     desc2: isId
-      ? 'Hasilnya? Waktu pengeringan terpangkas dari 15 hari menjadi hanya 3-5 hari. Kualitas biji lebih konsisten, terbebas dari jamur, dan mencapai standar kadar air 7% sesuai SNI 2323:2008 tanpa bergantung pada cuaca.'
-      : 'The result? Drying time is slashed from 15 days to just 3-5 days. Bean quality is highly consistent, mold-free, and reaches the 7% moisture standard (SNI 2323:2008) regardless of weather conditions.',
+      ? 'Hasilnya? Waktu pengeringan terpangkas dari 15 hari menjadi hanya 3-5 hari. Kualitas biji lebih konsisten, terbebas dari jamur, dan mencapai standar kadar air 6-7.5% sesuai SNI 2323:2008 tanpa bergantung pada cuaca.'
+      : 'The result? Drying time is slashed from 15 days to just 3-5 days. Bean quality is highly consistent, mold-free, and reaches the 6-7.5% moisture standard (SNI 2323:2008) regardless of weather conditions.',
     features: [
       { icon: Thermometer, title: isId ? 'Kontrol Suhu Presisi' : 'Precision Temp Control', desc: isId ? 'Menjaga suhu stabil 45-55°C untuk profil rasa maksimal.' : 'Maintains a stable 45-55°C for maximum flavor profile.' },
       { icon: Sun, title: isId ? 'Energi Hibrida' : 'Hybrid Energy', desc: isId ? 'Panel surya 2kWp dipadu dengan pemanas biomassa/gas.' : '2kWp solar panels combined with biomass/gas heating.' },
@@ -39,7 +39,7 @@ export default function TeknologiPage() {
     days15: '15-22 Hari',
     days3: '3-5 Hari',
     varies: 'Bervariasi (9-12%)',
-    exact: 'Presisi (7%)',
+    exact: 'Presisi (6-7.5%)',
   };
 
   const st = {

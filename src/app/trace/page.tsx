@@ -276,8 +276,8 @@ const MOCK_DATA: Record<string, BatchResult> = {
       },
       {
         done: true, date: '15 Jan',
-        note: 'Pengeringan Smart Dryer 5 hari. Kadar air akhir 7.8%.',
-        detail: 'Pengeringan menggunakan Smart Dryer bertenaga surya penuh (100% energi terbarukan) selama 5 hari. Karena batch ini berlabel organik, tidak ada bahan bakar fosil yang digunakan dalam seluruh proses pengeringan—hanya tenaga matahari. Data IoT DHT22 mencatat 480 titik data selama proses, seluruhnya tersimpan di cloud ledger immutable (hash: 0x8b3c...d72f). Penurunan kadar air dari 54% → 7.8% berjalan mulus tanpa interupsi, membuktikan keandalan sistem bahkan di musim hujan berkat atap kaca yang dapat disesuaikan sudutnya.',
+        note: 'Pengeringan Smart Dryer 5 hari. Kadar air akhir 7.4%.',
+        detail: 'Pengeringan menggunakan Smart Dryer bertenaga surya penuh (100% energi terbarukan) selama 5 hari. Karena batch ini berlabel organik, tidak ada bahan bakar fosil yang digunakan dalam seluruh proses pengeringan—hanya tenaga matahari. Data IoT DHT22 mencatat 480 titik data selama proses, seluruhnya tersimpan di cloud ledger immutable (hash: 0x8b3c...d72f). Penurunan kadar air dari 54% → 7.4% berjalan mulus tanpa interupsi, membuktikan keandalan sistem bahkan di musim hujan berkat atap kaca yang dapat disesuaikan sudutnya.',
         photo: '/images/pengeringan.jpg',
         photoAlt: 'Pengeringan kakao organik',
         hasIoT: true,
@@ -337,7 +337,7 @@ const MOCK_DATA: Record<string, BatchResult> = {
       {
         done: false, date: '—',
         note: 'Pengeringan Smart Dryer sedang berlangsung real-time.',
-        detail: 'Proses pengeringan Smart Dryer sedang berjalan. Data IoT terus diperbarui setiap 15 menit. Kadar air saat ini dalam proses penurunan dari 52%. Target kadar air akhir 7.5–8.5% sesuai standar SNI. Estimasi selesai dalam 3–4 hari ke depan tergantung kondisi cuaca.',
+        detail: 'Proses pengeringan Smart Dryer sedang berjalan. Data IoT terus diperbarui setiap 15 menit. Kadar air saat ini dalam proses penurunan dari 52%. Target kadar air akhir 6–7.5% sesuai standar SNI. Estimasi selesai dalam 3–4 hari ke depan tergantung kondisi cuaca.',
         photo: '/images/pengeringan.jpg',
         pendingIcon: 'dryer',
         hasIoT: true,

@@ -49,7 +49,7 @@ const COPY = {
     solutionBadge: '✅ Solusi J-SMART CACAO',
     solutionTitle: 'Ekosistem Terintegrasi Hulu–Hilir',
     solItems: [
-      'Smart Dryer IoT mengeliminasi ketergantungan cuaca, menjamin kadar air 7% sesuai SNI 2323:2008',
+      'Smart Dryer IoT mengeliminasi ketergantungan cuaca, menjamin kadar air 6-7.5% sesuai SNI 2323:2008',
       'Cloud Ledger menyimpan data tamper-proof untuk sertifikasi Fair Trade & kepercayaan ekspor',
       'Smart Packaging mengubah cokelat artisan menjadi agen promosi destinasi wisata Jembrana',
       'Platform web mengarahkan konsumen Bali Selatan menjadi wisatawan Agrowisata Jembrana',
@@ -109,7 +109,7 @@ const COPY = {
     solutionBadge: '✅ J-SMART CACAO Solution',
     solutionTitle: 'Integrated Upstream–Downstream Ecosystem',
     solItems: [
-      'IoT Smart Dryer eliminates weather dependency, ensuring 7% moisture per SNI 2323:2008 standard',
+      'IoT Smart Dryer eliminates weather dependency, ensuring 6-7.5% moisture per SNI 2323:2008 standard',
       'Cloud Ledger stores tamper-proof data for Fair Trade certification and export credibility',
       'Smart Packaging turns artisan chocolate into a smart destination promotion agent for Jembrana',
       'Web platform redirects South Bali consumers to become Jembrana agrotourism visitors',
@@ -261,8 +261,8 @@ const ECOSYSTEM_STEPS = [
   {
     icon: Thermometer, color: 'lime',
     titleId: 'Smart Dryer IoT', titleEn: 'IoT Smart Dryer',
-    descId: 'Sensor presisi menjaga suhu 45–55°C, memastikan kadar air stabil di 7% sesuai standar ekspor SNI.',
-    descEn: 'Precision sensors maintain 45-55°C, ensuring a stable 7% moisture content per SNI export standards.',
+    descId: 'Sensor presisi menjaga suhu 45–55°C, memastikan kadar air stabil di 6-7.5% sesuai standar ekspor SNI.',
+    descEn: 'Precision sensors maintain 45-55°C, ensuring a stable 6-7.5% moisture content per SNI export standards.',
     imgSrc: '/images/smart-dryer.jpeg',
     imgAlt: 'Smart Dryer IoT unit',
   },
@@ -344,10 +344,10 @@ const EDU_CHAPTERS = [
     tagId: 'Bab 4', tagEn: 'Chapter 4',
     titleId: 'Proses Fermentasi & Pengeringan', titleEn: 'Fermentation & Drying Process',
     imgSrc: '/images/fermentasi.png', imgAlt: 'Proses fermentasi biji kakao Jembrana',
-    bodyId: 'Fermentasi adalah kunci flavour kakao premium. Biji kakao difermentasi 5–7 hari dalam kotak kayu berlapis pisang. Setelahnya, Smart Dryer IoT mengambil alih — menjaga suhu 45–55°C secara presisi, memangkas waktu pengeringan dari 15–22 hari (cara konvensional) menjadi hanya 3–5 hari dengan kadar air akhir 7% sesuai SNI.',
-    bodyEn: 'Fermentation is the key to premium cacao flavor. Cacao beans are fermented for 5–7 days in banana-lined wooden boxes. Afterward, the IoT Smart Dryer takes over — precisely maintaining 45–55°C, cutting drying time from 15–22 days (conventional) to just 3–5 days with a final moisture content of 7% per SNI standard.',
-    factsId: ['Fermentasi 5–7 hari alami', 'Smart Dryer: 3–5 hari', 'Kadar air akhir 7% (SNI 2323:2008)'],
-    factsEn: ['Natural 5–7 day fermentation', 'Smart Dryer: 3–5 days', 'Final moisture content 7% (SNI 2323:2008)'],
+    bodyId: 'Fermentasi adalah kunci flavour kakao premium. Biji kakao difermentasi 5–7 hari dalam kotak kayu berlapis pisang. Setelahnya, Smart Dryer IoT mengambil alih — menjaga suhu 45–55°C secara presisi, memangkas waktu pengeringan dari 15–22 hari (cara konvensional) menjadi hanya 3–5 hari dengan kadar air akhir 6-7.5% sesuai SNI.',
+    bodyEn: 'Fermentation is the key to premium cacao flavor. Cacao beans are fermented for 5–7 days in banana-lined wooden boxes. Afterward, the IoT Smart Dryer takes over — precisely maintaining 45–55°C, cutting drying time from 15–22 days (conventional) to just 3–5 days with a final moisture content of 6-7.5% per SNI standard.',
+    factsId: ['Fermentasi 5–7 hari alami', 'Smart Dryer: 3–5 hari', 'Kadar air akhir 6-7.5% (SNI 2323:2008)'],
+    factsEn: ['Natural 5–7 day fermentation', 'Smart Dryer: 3–5 days', 'Final moisture content 6-7.5% (SNI 2323:2008)'],
   },
 ];
 

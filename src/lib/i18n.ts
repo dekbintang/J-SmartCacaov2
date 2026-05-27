@@ -127,7 +127,7 @@ export const t = {
       solution_badge:  '✅ Solusi J-SMART CACAO',
       solution_title:  'Ekosistem Terintegrasi Hulu–Hilir',
       solution_items: [
-        'Smart Dryer IoT mengeliminasi ketergantungan cuaca, menjamin kadar air 7% sesuai SNI 2323:2008',
+        'Smart Dryer IoT mengeliminasi ketergantungan cuaca, menjamin kadar air 6-7.5% sesuai SNI 2323:2008',
         'Cloud Ledger menyimpan data tamper-proof untuk sertifikasi Fair Trade & kepercayaan ekspor',
         'Smart Packaging mengubah cokelat artisan menjadi agen promosi destinasi wisata Jembrana',
         'Platform web mengarahkan konsumen Bali Selatan menjadi wisatawan Agrowisata Jembrana',
@@ -193,7 +193,7 @@ export const t = {
         {
           id: 'fermentasi', tag: 'Bab 4', title: 'Proses Fermentasi & Pengeringan', visual: '🌡️',
           body: 'Fermentasi adalah kunci flavour kakao premium. Biji kakao difermentasi 5–7 hari dalam kotak kayu berlapis pisang untuk mengembangkan prekursor rasa cokelat.',
-          facts: ['Fermentasi 5–7 hari alami', 'Smart Dryer: 3–5 hari', 'Kadar air akhir 7% (SNI 2323:2008)'],
+          facts: ['Fermentasi 5–7 hari alami', 'Smart Dryer: 3–5 hari', 'Kadar air akhir 6-7.5% (SNI 2323:2008)'],
         },
       ],
 
@@ -269,7 +269,7 @@ export const t = {
       solution_badge:  '✅ J-SMART CACAO Solution',
       solution_title:  'Integrated Upstream–Downstream Ecosystem',
       solution_items: [
-        'IoT Smart Dryer eliminates weather dependency, guaranteeing 7% moisture per SNI 2323:2008',
+        'IoT Smart Dryer eliminates weather dependency, guaranteeing 6-7.5% moisture per SNI 2323:2008',
         'Cloud Ledger stores tamper-proof data for Fair Trade certification and export credibility',
         'Smart Packaging turns artisan chocolate into a promotional agent for Jembrana tourism',
         'The web platform converts South Bali consumers into Jembrana Agrotourism visitors',
@@ -335,7 +335,7 @@ export const t = {
         {
           id: 'fermentation', tag: 'Chapter 4', title: 'Fermentation & Drying Process', visual: '🌡️',
           body: 'Fermentation is the key to premium cacao flavour. Cacao beans ferment for 5–7 days in banana-lined wooden boxes to develop chocolate flavour precursors.',
-          facts: ['5–7 days natural fermentation', 'Smart Dryer: 3–5 days', 'Final moisture 7% (SNI 2323:2008)'],
+          facts: ['5–7 days natural fermentation', 'Smart Dryer: 3–5 days', 'Final moisture 6-7.5% (SNI 2323:2008)'],
         },
       ],
 
