@@ -542,7 +542,7 @@ export default function TelusurPage() {
   if (!mounted) return null;
 
   return (
-    <div className={`min-h-screen transition-colors duration-200 ${poppins.className} ${isDark ? 'bg-zinc-950' : 'bg-gray-50'}`}>
+    <div className={`min-h-screen overflow-x-hidden transition-colors duration-200 ${poppins.className} ${isDark ? 'bg-zinc-950' : 'bg-gray-50'}`}>
 
       <main className="pt-6 sm:pt-10 pb-20 px-4 w-full max-w-7xl mx-auto">
         {/* ─── Hero Section ─── */}
@@ -553,7 +553,7 @@ export default function TelusurPage() {
         >
           {/* Decorative glow */}
           <div className="absolute inset-0 -z-10 pointer-events-none">
-            <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] rounded-full blur-[120px] ${isDark ? 'bg-emerald-500/8' : 'bg-emerald-400/10'}`} />
+            <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] sm:w-[500px] h-[300px] rounded-full blur-[120px] ${isDark ? 'bg-emerald-500/8' : 'bg-emerald-400/10'}`} />
           </div>
 
           <motion.div
