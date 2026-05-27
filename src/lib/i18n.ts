@@ -154,7 +154,7 @@ export const t = {
       features: [
         { title: 'Keterlacakan',   en: 'Farm-to-Bar Transparency',    desc: 'Lacak perjalanan kakao dari kebun petani hingga ke kemasan cokelat di tangan Anda. Ketahui nama petani, lokasi kebun, tanggal panen, dan data kualitas pengeringan.', cta: 'Lacak Produk',    href: '/trace'     },
         { title: 'Smart Dryer IoT',en: 'Precision Drying Technology', desc: 'Kabinet pengering hibrida 200 kg dengan sensor IoT DHT22, panel surya, dan kendali suhu otomatis. Eliminasi ketergantungan pada cuaca & risiko jamur.',            cta: 'Lihat Teknologi', href: '/teknologi' },
-        { title: 'Edu-Tourism',    en: 'Interactive Education',       desc: 'Digital storytelling tentang sejarah kebun, profil petani, sistem Subak Abian, dan proses fermentasi. Mengubah cokelat menjadi portal edukasi interaktif.',           cta: 'Jelajahi Budaya', href: '/budaya'    },
+        { title: 'Edu-Tourism',    en: 'Interactive Education',       desc: 'Digital storytelling tentang sejarah kebun, profil petani, sistem Subak Abian, dan proses fermentasi. Mengubah cokelat menjadi portal edukasi interaktif.',           cta: 'Jelajahi Edukasi', href: '/edukasi'    },
         { title: 'Agrowisata',     en: 'Cacao Agrotourism',           desc: 'Paket wisata pemetikan kakao, edukasi fermentasi, dan kunjungan kebun langsung di Jembrana. Navigasi Google Maps terintegrasi menuju lokasi.',                        cta: 'Pesan Wisata',    href: '/wisata'    },
       ],
 
@@ -171,9 +171,9 @@ export const t = {
       edu_title2:     'Edukasi Interaktif',
       edu_subtitle:   'Setiap scan QR membuka pintu ke cerita mendalam tentang sejarah kebun, profil petani, sistem Subak Abian, dan proses fermentasi.',
       edu_chapters:   'Bab Cerita',
-      edu_cta_title:  'Jelajahi Cerita Lengkap di Halaman Budaya',
-      edu_cta_desc:   'Temukan galeri foto kebun, video proses fermentasi, peta Subak Abian interaktif, dan wawancara langsung dengan petani.',
-      edu_cta_btn:    'Buka Halaman Budaya',
+      edu_cta_title:  'Telusuri Lebih Dalam Kisah Kakao Jembrana',
+      edu_cta_desc:   'Saksikan langsung bagaimana petani merawat kebun mereka, sistem Subak Abian yang unik, hingga keajaiban proses fermentasi kakao.',
+      edu_cta_btn:    'Jelajahi Cerita Kebun',
       chapters: [
         {
           id: 'sejarah', tag: 'Bab 1', title: 'Sejarah Kebun Kakao Jembrana', visual: '🌳',
@@ -296,7 +296,7 @@ export const t = {
       features: [
         { title: 'Traceability',   en: 'Farm-to-Bar Transparency',    desc: 'Track cacao\'s journey from the farmer\'s plot to the chocolate in your hands. Know the farmer\'s name, farm location, harvest date, and drying quality data.', cta: 'Trace Product',   href: '/trace'     },
         { title: 'IoT Smart Dryer',en: 'Precision Drying Technology', desc: '200 kg hybrid drying cabinet with IoT DHT22 sensor, solar panels, and automated temperature control. Eliminates weather dependency and mold risk.',          cta: 'View Technology', href: '/teknologi' },
-        { title: 'Edu-Tourism',    en: 'Interactive Education',       desc: 'Digital storytelling on plantation history, farmer profiles, the Subak Abian system, and the fermentation process — turning chocolate into an interactive education portal.', cta: 'Explore Culture', href: '/budaya'    },
+        { title: 'Edu-Tourism',    en: 'Interactive Education',       desc: 'Digital storytelling on plantation history, farmer profiles, the Subak Abian system, and the fermentation process — turning chocolate into an interactive education portal.', cta: 'Explore Education', href: '/edukasi'    },
         { title: 'Agrotourism',    en: 'Cacao Agrotourism',           desc: 'Cacao picking packages, fermentation education, and direct farm visits in Jembrana. Integrated Google Maps navigation to the location.',                        cta: 'Book a Tour',     href: '/wisata'    },
       ],
 
@@ -313,9 +313,9 @@ export const t = {
       edu_title2:     'Interactive Education Portal',
       edu_subtitle:   'Every QR scan opens a deep story about plantation history, farmer profiles, the Subak Abian system, and the fermentation process.',
       edu_chapters:   'Story Chapters',
-      edu_cta_title:  'Explore the Full Story on the Culture Page',
-      edu_cta_desc:   'Discover farm photo galleries, fermentation process videos, an interactive Subak Abian map, and direct farmer interviews.',
-      edu_cta_btn:    'Open Culture Page',
+      edu_cta_title:  'Dive Deeper into the Jembrana Cacao Story',
+      edu_cta_desc:   'Witness firsthand how local farmers nurture their crops, explore the unique Subak Abian system, and discover the magic of cacao fermentation.',
+      edu_cta_btn:    'Explore Farm Story',
       chapters: [
         {
           id: 'history', tag: 'Chapter 1', title: 'History of Jembrana Cacao Plantations', visual: '🌳',
