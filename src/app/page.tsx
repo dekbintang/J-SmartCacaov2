@@ -263,7 +263,7 @@ const ECOSYSTEM_STEPS = [
     titleId: 'Smart Dryer IoT', titleEn: 'IoT Smart Dryer',
     descId: 'Sensor DHT22 menjaga suhu 45–55°C, data dikirim real-time ke Cloud Ledger',
     descEn: 'DHT22 sensors maintain 45–55°C, data sent real-time to the Cloud Ledger',
-    imgSrc: '/images/ecosystem/02-dryer.jpg',
+    imgSrc: '/images/smart-dryer.jpeg',
     imgAlt: 'Smart Dryer IoT unit',
   },
   {
@@ -281,6 +281,7 @@ const ECOSYSTEM_STEPS = [
     descEn: 'Unique QR Code per batch printed on premium artisan chocolate packaging',
     imgSrc: '/images/solusi-jsmartcacao.png',
     imgAlt: 'Smart packaging dengan QR code',
+    objectFit: 'contain',
   },
   {
     icon: ScanLine, color: 'teal2',
@@ -304,7 +305,7 @@ const FEATURES = [
   { icon: QrCode, color: 'teal', titleId: 'Keterlacakan', titleEn: 'Traceability', en: 'Farm-to-Bar Transparency', descId: 'Lacak perjalanan kakao dari kebun petani hingga ke kemasan cokelat di tangan Anda. Ketahui nama petani, lokasi kebun, tanggal panen, dan data kualitas pengeringan.', descEn: "Track cacao from the farmer's field to the chocolate wrapper in your hands. Know the farmer's name, farm location, harvest date, and drying quality data.", href: '/trace', ctaId: 'Lacak Produk', ctaEn: 'Trace Product' },
   { icon: Thermometer, color: 'lime', titleId: 'Smart Dryer IoT', titleEn: 'Smart Dryer IoT', en: 'Precision Drying Technology', descId: 'Kabinet pengering hibrida 200 kg dengan sensor IoT DHT22, panel surya, dan kendali suhu otomatis. Eliminasi ketergantungan pada cuaca & risiko jamur.', descEn: '200 kg hybrid drying cabinet with IoT DHT22 sensors, solar panels, and automatic temperature control. Eliminates weather dependency and mold risk.', href: '/teknologi', ctaId: 'Lihat Teknologi', ctaEn: 'View Technology' },
   { icon: BookOpen, color: 'emerald', titleId: 'Edu-Tourism', titleEn: 'Edu-Tourism', en: 'Interactive Education', descId: 'Digital storytelling tentang sejarah kebun, profil petani, sistem Subak Abian, dan proses fermentasi. Mengubah cokelat menjadi portal edukasi interaktif.', descEn: 'Digital storytelling about farm history, farmer profiles, the Subak Abian system, and fermentation. Turns chocolate into an interactive education portal.', href: '/budaya', ctaId: 'Jelajahi Budaya', ctaEn: 'Explore Culture' },
-  { icon: MapPin, color: 'green', titleId: 'Agrowisata', titleEn: 'Agrotourism', en: 'Cacao Agrotourism', descId: 'Paket wisata pemetikan kakao, edukasi fermentasi, dan kunjungan kebun langsung di Jembrana. Navigasi Google Maps terintegrasi menuju lokasi.', descEn: 'Cacao harvesting, fermentation education, and farm visit packages in Jembrana. Integrated Google Maps navigation to the location.', href: '/wisata', ctaId: 'Pesan Wisata', ctaEn: 'Book a Tour' },
+  { icon: MapPin, color: 'green', titleId: 'Agrowisata', titleEn: 'Agrotourism', en: 'Cacao Agrotourism', descId: 'Paket wisata pemetikan kakao, edukasi fermentasi, dan kunjungan kebun langsung di Jembrana. Navigasi Google Maps terintegrasi menuju lokasi.', descEn: 'Cacao harvesting, fermentation education, and farm visit packages in Jembrana. Integrated Google Maps navigation to the location.', href: '/telusuri', ctaId: 'Pesan Wisata', ctaEn: 'Book a Tour' },
 ];
 
 const EDU_CHAPTERS = [
@@ -550,7 +551,7 @@ function Carousel3D({ items, isDark, isId }: { items: typeof ECOSYSTEM_STEPS; is
                   <div className="relative h-[175px] flex-shrink-0">
                     <PhotoSlot src={step.imgSrc} alt={step.imgAlt}
                       aspectRatio="" className="!rounded-none h-full"
-                      label={`📸 ${step.imgAlt}`} />
+                      label={`📸 ${step.imgAlt}`} objectFit={(step as any).objectFit} />
                     <div className="absolute top-3 left-3 w-7 h-7 rounded-full flex items-center justify-center
                       text-xs font-black text-white bg-gradient-to-br from-emerald-600 to-green-700 shadow-lg">
                       {idx + 1}
@@ -672,7 +673,7 @@ function HeroSection() {
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }}
           className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
-          <Link href="/wisata" className="w-full sm:w-auto">
+          <Link href="/telusuri" className="w-full sm:w-auto">
             <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
               className="w-full sm:w-auto group flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-green-500 hover:from-emerald-500 hover:to-green-400 text-white font-bold text-sm sm:text-base shadow-2xl shadow-emerald-500/30 hover:shadow-emerald-500/50 transition-all"
             >
@@ -1209,27 +1210,27 @@ function CTASection() {
   const { isDark, t } = useTheme();
   const st = mkSt(isDark);
   return (
-    <section className="py-24 px-6">
+    <section className="py-16 sm:py-24 px-4 sm:px-6">
       <FadeIn>
-        <div className={`max-w-4xl mx-auto relative p-10 sm:p-12 rounded-3xl border border-green-700/30 text-center overflow-hidden ${isDark ? 'bg-gradient-to-br from-green-500/8 via-[#0d0d0d] to-teal-500/6' : 'bg-gradient-to-br from-green-50 via-white to-teal-50/60'}`}>
+        <div className={`max-w-4xl mx-auto relative p-6 sm:p-10 md:p-12 rounded-3xl border border-green-700/30 text-center overflow-hidden ${isDark ? 'bg-gradient-to-br from-green-500/8 via-[#0d0d0d] to-teal-500/6' : 'bg-gradient-to-br from-green-50 via-white to-teal-50/60'}`}>
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-green-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="relative">
-            <div className="text-4xl mb-4">🍫</div>
-            <h2 className={`text-2xl sm:text-4xl font-black tracking-tight mb-4 ${st.h}`}>{t.ctaTitle}</h2>
-            <p className={`max-w-lg mx-auto mb-8 leading-relaxed text-sm sm:text-base ${st.body}`}>{t.ctaDesc}</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/trace">
+            <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🍫</div>
+            <h2 className={`text-xl sm:text-3xl md:text-4xl font-black tracking-tight mb-3 sm:mb-4 ${st.h}`}>{t.ctaTitle}</h2>
+            <p className={`max-w-lg mx-auto mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base ${st.body}`}>{t.ctaDesc}</p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+              <Link href="/trace" className="w-full sm:w-auto">
                 <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
-                  className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-500 hover:to-emerald-400 text-white font-bold shadow-2xl shadow-green-500/25 transition-all"
-                ><QrCode size={18} />{t.ctaBtn1}</motion.button>
+                  className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-500 hover:to-emerald-400 text-white font-bold text-sm sm:text-base shadow-xl shadow-green-500/25 transition-all"
+                ><QrCode size={17} />{t.ctaBtn1}</motion.button>
               </Link>
-              <Link href="/wisata">
+              <Link href="/telusuri" className="w-full sm:w-auto">
                 <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
-                  className={`flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl border font-bold transition-all ${st.ghostBtn}`}
-                ><MapPin size={18} className="text-emerald-400" />{t.ctaBtn2}</motion.button>
+                  className={`w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl border font-bold text-sm sm:text-base transition-all ${st.ghostBtn}`}
+                ><MapPin size={17} className="text-emerald-400" />{t.ctaBtn2}</motion.button>
               </Link>
             </div>
-            <p className={`mt-6 text-xs flex items-center justify-center gap-1.5 ${st.dim}`}>
+            <p className={`mt-5 sm:mt-6 text-xs flex items-center justify-center gap-1.5 ${st.dim}`}>
               <Globe size={11} />{t.ctaFooter}
             </p>
           </div>

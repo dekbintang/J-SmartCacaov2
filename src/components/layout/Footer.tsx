@@ -75,23 +75,23 @@ export default function Footer() {
 
   return (
     <footer className={`border-t transition-colors duration-300 ${base}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-12 gap-10 mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 pb-24 sm:pb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-12 gap-6 sm:gap-10 mb-8 sm:mb-12">
 
-          {/* Brand */}
-          <div className="sm:col-span-5">
-            <Link href="/" className="inline-flex items-center gap-3 mb-4 group">
+          {/* Brand — full width on mobile */}
+          <div className="col-span-2 sm:col-span-5">
+            <Link href="/" className="inline-flex items-center gap-2 mb-3 group">
               <img
                 src="/images/logo.png"
                 alt="Logo J-Smart Cacao"
-                className="w-10 h-10 object-contain"
+                className="w-8 h-8 object-contain flex-shrink-0"
               />
-              <span className={`font-bold text-xl tracking-tight ${head} transition-colors`}>
+              <span className={`font-bold text-lg tracking-tight whitespace-nowrap ${head} transition-colors`}>
                 J-SMART <span className="text-emerald-500">CACAO</span>
               </span>
             </Link>
             <p className={`text-sm leading-relaxed max-w-xs ${body}`}>{c.tagline}</p>
-            <div className="flex gap-2 mt-5">
+            <div className="flex gap-2 mt-4">
               {[
                 { Icon: Globe, label: 'Website', href: '#' },
                 { Icon: Mail, label: 'Email', href: 'mailto:hello@jsmartcacao.id' },
@@ -106,9 +106,9 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation — dibungkus Suspense karena pakai usePathname */}
-          <div className="sm:col-span-3">
-            <p className={`text-[10px] font-bold uppercase tracking-widest mb-4 ${muted}`}>{c.nav}</p>
+          {/* Navigation */}
+          <div className="col-span-1 sm:col-span-3">
+            <p className={`text-[10px] font-bold uppercase tracking-widest mb-3 ${muted}`}>{c.nav}</p>
             <Suspense fallback={
               <div className="flex flex-col gap-2">
                 {NAV_LINKS.map(l => (
@@ -125,19 +125,19 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="sm:col-span-4">
-            <p className={`text-[10px] font-bold uppercase tracking-widest mb-4 ${muted}`}>{c.contact}</p>
-            <div className="flex flex-col gap-3">
-              <div className="flex items-start gap-2.5">
+          <div className="col-span-1 sm:col-span-4">
+            <p className={`text-[10px] font-bold uppercase tracking-widest mb-3 ${muted}`}>{c.contact}</p>
+            <div className="flex flex-col gap-2.5">
+              <div className="flex items-start gap-2">
                 <MapPin size={13} className="text-emerald-500 mt-0.5 flex-shrink-0" />
                 <span className={`text-sm leading-relaxed ${body}`}>
-                  Jembrana, Bali, Indonesia
+                  Jembrana, Bali
                 </span>
               </div>
-              <div className="flex items-center gap-2.5">
+              <div className="flex items-center gap-2">
                 <Mail size={13} className="text-emerald-500 flex-shrink-0" />
                 <a href="mailto:hello@jsmartcacao.id"
-                  className={`text-sm transition-colors ${body} ${hover}`}
+                  className={`text-xs sm:text-sm transition-colors break-all ${body} ${hover}`}
                 >
                   hello@jsmartcacao.id
                 </a>
@@ -147,7 +147,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className={`pt-6 border-t flex flex-col sm:flex-row items-center justify-between gap-3 ${divider}`}>
+        <div className={`pt-5 border-t flex flex-col sm:flex-row items-center justify-between gap-2 ${divider}`}>
           <p className={`text-xs ${muted}`}>{c.rights}</p>
           <p className={`text-xs ${muted} flex items-center gap-1`}>
             <Leaf size={11} className="text-emerald-500" />

@@ -1603,7 +1603,8 @@ function InfoPanel({ scene, lang, isDark }: { scene: SceneKey; lang: Lang; isDar
       distanceFactor={8}
       occlude={false}
     >
-      <div style={{
+      {/* hidden on mobile (below md), visible on md+ only */}
+      <div className="hidden md:block" style={{
         background: isDark ? 'rgba(17,17,17,0.95)' : 'rgba(255,255,255,0.95)',
         border: `1px solid ${isDark ? 'rgba(52,211,153,0.25)' : 'rgba(5,150,105,0.3)'}`,
         borderRadius: '20px',
@@ -2064,6 +2065,63 @@ export default function BudayaPage() {
           >
             🖱️ {c.hint}
           </div>
+        </div>
+
+        {/* ── MOBILE INFO CARD — visible only on mobile (hidden md+) ── */}
+        <div className="md:hidden mx-4 mt-4">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeScene}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 16 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+              className={`rounded-2xl border p-5 ${isDark
+                ? 'bg-[rgba(17,17,17,0.98)] border-[rgba(52,211,153,0.25)]'
+                : 'bg-white border-[rgba(5,150,105,0.25)] shadow-md'}`}
+              style={{ fontFamily: dmSans.style.fontFamily }}
+            >
+              {/* Category */}
+              <p style={{ fontSize: '9px', fontWeight: 800, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '6px', color: isDark ? '#34d399' : '#059669' }}>
+                {c.info[activeScene].cat}
+              </p>
+              {/* Title */}
+              <h3 style={{ fontSize: '20px', fontWeight: 800, lineHeight: 1.2, marginBottom: '3px', color: isDark ? '#ffffff' : '#18181b', fontFamily: playfair.style.fontFamily }}>
+                {c.info[activeScene].title}
+              </h3>
+              {/* Tagline */}
+              <p style={{ fontSize: '12px', fontStyle: 'italic', color: isDark ? '#34d399' : '#059669', marginBottom: '12px' }}>
+                {(c.info[activeScene] as any).tagline}
+              </p>
+              {/* Description */}
+              <p style={{ fontSize: '13px', lineHeight: 1.75, color: isDark ? '#a1a1aa' : '#3f3f46', marginBottom: '14px' }}>
+                {c.info[activeScene].desc}
+              </p>
+              {/* Facts chips */}
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '12px' }}>
+                {(c.info[activeScene] as any).facts?.map((f: string, i: number) => (
+                  <span key={i} style={{
+                    fontSize: '11px', fontWeight: 600,
+                    padding: '4px 10px', borderRadius: '99px',
+                    background: isDark ? 'rgba(52,211,153,0.12)' : 'rgba(5,150,105,0.08)',
+                    color: isDark ? '#34d399' : '#059669',
+                    border: `1px solid ${isDark ? 'rgba(52,211,153,0.25)' : 'rgba(5,150,105,0.20)'}`,
+                  }}>{f}</span>
+                ))}
+              </div>
+              {/* Note */}
+              <div style={{
+                padding: '10px 14px',
+                background: isDark ? 'rgba(52,211,153,0.08)' : 'rgba(5,150,105,0.06)',
+                borderRadius: '12px',
+                fontSize: '12px', fontWeight: 600,
+                color: isDark ? '#34d399' : '#059669',
+                border: `1px solid ${isDark ? 'rgba(52,211,153,0.20)' : 'rgba(5,150,105,0.15)'}`,
+              }}>
+                {c.info[activeScene].note}
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
 
         {/* ── CULTURAL TRIVIA (replaces redundant slide-up info) ── */}

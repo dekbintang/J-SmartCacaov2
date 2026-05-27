@@ -38,18 +38,19 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-2xl border-b border-zinc-100 dark:border-zinc-800 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 py-3 md:py-5 flex items-center justify-between">
         
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-2">
           {/* Ganti "logo.png" dengan nama file gambar aslimu di folder public/images/ */}
           <img 
             src="/images/logo.png" 
             alt="Logo J-Smart Cacao" 
-            className="w-12 h-12 object-contain" 
+            className="w-8 h-8 md:w-10 md:h-10 object-contain flex-shrink-0" 
           />
-          <div className="font-bold text-3xl tracking-[-2px]">
-            <span className="text-zinc-900 dark:text-white transition-colors duration-300">J-SMART</span>
+          <div className="font-bold text-xl md:text-2xl tracking-[-1px] whitespace-nowrap">
+            <span className="text-zinc-900 dark:text-white transition-colors duration-300">J-</span>
+            <span className="text-zinc-900 dark:text-white transition-colors duration-300">SMART</span>
             <span className="text-emerald-600">CACAO</span>
           </div>
         </Link>
@@ -82,17 +83,17 @@ export default function Navbar() {
           {/* Language Switcher */}
           <div 
             onClick={toggleLang}
-            className="hidden sm:flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-zinc-900 rounded-3xl border border-zinc-200 dark:border-zinc-700 cursor-pointer hover:border-emerald-200 dark:hover:border-emerald-700 transition-all active:scale-95"
+            className="flex items-center gap-2 px-3 py-1.5 sm:px-5 sm:py-2.5 bg-white dark:bg-zinc-900 rounded-3xl border border-zinc-200 dark:border-zinc-700 cursor-pointer hover:border-emerald-200 dark:hover:border-emerald-700 transition-all active:scale-95"
           >
-            <span className="text-sm font-semibold tracking-wider text-zinc-700 dark:text-zinc-300">
-              {lang === "id" ? "ID" : "EN"}
+            <span className="text-xs sm:text-sm font-semibold tracking-wider text-zinc-700 dark:text-zinc-300">
+              {lang === "id" ? "EN" : "ID"}
             </span>
           </div>
 
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
-            className="w-11 h-11 flex items-center justify-center rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:border-emerald-200 dark:hover:border-emerald-700 transition-all active:scale-95"
+            className="w-9 h-9 md:w-11 md:h-11 flex items-center justify-center rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:border-emerald-200 dark:hover:border-emerald-700 transition-all active:scale-95"
           >
             {theme === 'dark' ? (
               <span className="text-amber-500 text-lg">☀︎</span>
@@ -104,9 +105,9 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden w-11 h-11 flex items-center justify-center rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700"
+            className="md:hidden w-9 h-9 flex items-center justify-center rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700"
           >
-            {isOpen ? <X size={28} className="text-zinc-900 dark:text-white" /> : <Menu size={28} className="text-zinc-900 dark:text-white" />}
+            {isOpen ? <X size={20} className="text-zinc-900 dark:text-white" /> : <Menu size={20} className="text-zinc-900 dark:text-white" />}
           </button>
         </div>
       </div>

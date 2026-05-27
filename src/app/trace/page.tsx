@@ -174,7 +174,7 @@ const DEMO_CODES = ['KSS-2026-02-041', 'JEM-ORG-2026-B04', 'KSS-2026-03-112'] as
 
 const MOCK_DATA: Record<string, BatchResult> = {
   'KSS-2026-02-041': {
-    farm: 'Kebun Surya Semesta',
+    farm: 'Kebun KTT Merta Abadi',
     location: 'Jembrana, Bali',
     harvestDate: '12 Feb 2026',
     weight: '2.340 kg',
@@ -182,7 +182,7 @@ const MOCK_DATA: Record<string, BatchResult> = {
     moisture: '7.2%',
     certifications: ['Rainforest Alliance', 'UTZ', 'Organic'],
     mapsUrl: 'https://maps.google.com/?q=Jembrana+Bali+Agrowisata+Kakao',
-    agrowisataUrl: '#agrowisata',
+    agrowisataUrl: '/telusuri',
     farmer: {
       name: 'I Wayan Suparta',
       photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&q=80&auto=format&fit=crop&crop=face',
@@ -226,16 +226,10 @@ const MOCK_DATA: Record<string, BatchResult> = {
         done: true, date: '25 Feb',
         note: 'Sortir manual & mekanik. Grade AA terkonfirmasi.',
         detail: 'Seleksi kualitas dilakukan dua tahap: pertama melalui mesin sortir getar yang memisahkan biji berdasarkan ukuran dan bobot, lalu dilanjutkan pemeriksaan manual oleh tim QC PT. Kakao Mulia. Cut test dilakukan pada sampel 100 biji acak: 96 biji terklasifikasi "fully fermented" (berwarna cokelat merata dengan aroma cokelat kuat), 3 biji "partially fermented", dan 1 biji "slaty". Hasil ini melampaui ambang batas Grade AA (minimal 90% fully fermented). Biji kemudian diklasifikasikan, ditimbang ulang, dan dikemas dalam karung goni berlabel yang disegel dan diberi nomor seri untuk keperluan ekspor.',
-        photo: 'https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=600&q=70&auto=format&fit=crop',
+        photo: '/images/biji-cacao.jpg',
         photoAlt: 'Proses seleksi dan grading kualitas kakao',
       },
-      {
-        done: false, date: '15 Mar',
-        note: 'Pengiriman ke Rotterdam, Belanda via Pelabuhan Tanjung Priok.',
-        detail: 'Batch ini dijadwalkan dikirim ke Rotterdam, Belanda pada 15 Maret 2026 melalui Pelabuhan Tanjung Priok, Jakarta. Pengiriman menggunakan kontainer berpendingin 20 ft dengan pengatur kelembapan untuk menjaga kualitas selama perjalanan ±28 hari. Dokumen ekspor termasuk Phytosanitary Certificate, Certificate of Origin, dan laporan analisis laboratorium telah disiapkan. Estimasi tiba di Pelabuhan Rotterdam: 28 Maret 2026. Pembeli adalah Chocolate House Amsterdam, pemasok cokelat premium yang mengutamakan rantai pasok transparan dan berkelanjutan.',
-        photo: null,
-        pendingIcon: 'ship',
-      },
+
     ],
   },
 
@@ -292,17 +286,10 @@ const MOCK_DATA: Record<string, BatchResult> = {
         done: true, date: '18 Jan',
         note: 'Grade A terkonfirmasi. Lolos uji Fairtrade & Organic.',
         detail: 'Inspeksi kualitas dilakukan tim independen dari CV. Kakao Prima bersama auditor Fairtrade Indonesia. Cut test pada 100 biji sampel: 93 fully fermented, 5 partially fermented, 2 slaty—memenuhi Grade A. Selain itu, dilakukan pengujian residu pestisida menggunakan metode GCMS di laboratorium terakreditasi; hasilnya bersih dari 87 senyawa pestisida yang diuji. Sertifikat Fairtrade diterbitkan dengan nomor FLO-ID-2026-JEM-004, menjamin petani menerima Fairtrade Premium sebesar USD 200/ton di atas harga pasar.',
-        photo: 'https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=600&q=70&auto=format&fit=crop',
+        photo: '/images/biji-cacao.jpg',
         photoAlt: 'Seleksi kualitas organik',
       },
-      {
-        done: true, date: '1 Feb',
-        note: 'Dikirim ke Tokyo, Jepang. Tiba tepat waktu.',
-        detail: 'Batch berhasil dikirim ke Tokyo, Jepang dan tiba tepat waktu sesuai kontrak pada 22 Februari 2026. Pengiriman menggunakan kontainer khusus organik (tidak pernah membawa kargo non-organik) via Pelabuhan Benoa, Bali menuju Pelabuhan Tokyo. Pembeli, Meiji Organic Chocolate Co., melaporkan batch ini memiliki profil rasa "floral-nutty" dengan keasaman cerah—langsung diformulasikan menjadi lini cokelat premium single-origin mereka yang akan diluncurkan April 2026.',
-        photo: null,
-        pendingIcon: 'ship',
-        doneShip: true,
-      },
+
     ],
   },
 
@@ -360,16 +347,10 @@ const MOCK_DATA: Record<string, BatchResult> = {
         done: false, date: '—',
         note: 'Menunggu pengeringan selesai sebelum seleksi.',
         detail: 'Tahap seleksi kualitas akan dilakukan segera setelah proses pengeringan mencapai kadar air target. Tim QC UD. Bali Cacao sudah terjadwal untuk melakukan cut test dan grading.',
-        photo: null,
+        photo: '/images/biji-cacao.jpg',
         pendingIcon: 'selection',
       },
-      {
-        done: false, date: '—',
-        note: 'Belum dijadwalkan. Menunggu konfirmasi pembeli.',
-        detail: 'Rencana ekspor atau distribusi batch ini belum dikonfirmasi. Setelah grading selesai, UD. Bali Cacao akan menentukan tujuan pasar berdasarkan kualitas akhir batch.',
-        photo: null,
-        pendingIcon: 'ship',
-      },
+
     ],
   },
 };
@@ -437,6 +418,78 @@ function IoTSparkline({ readings, isLive }: { readings: number[]; isLive?: boole
   );
 }
 
+// ─── Blockchain Modal ─────────────────────────────────────────────────────────
+
+interface BlockchainModalProps {
+  isDark: boolean;
+  hash: string;
+  onClose: () => void;
+}
+
+function BlockchainModal({ isDark, hash, onClose }: BlockchainModalProps) {
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={onClose}
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-pointer"
+      />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95, y: 10 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.95, y: 10 }}
+        className={cn(
+          'relative w-full max-w-sm rounded-3xl overflow-hidden shadow-2xl p-6 z-10',
+          isDark ? 'bg-zinc-900 border border-emerald-900/50' : 'bg-white border border-emerald-100'
+        )}
+      >
+        <button
+          onClick={onClose}
+          className={cn(
+            'absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center transition-colors',
+            isDark ? 'bg-zinc-800 text-zinc-400 hover:text-white' : 'bg-gray-100 text-zinc-500 hover:text-zinc-900'
+          )}
+        >
+          <X size={16} />
+        </button>
+
+        <div className="flex flex-col items-center text-center mt-2">
+          <div className="w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mb-4">
+            <ShieldCheck size={32} className="text-emerald-600 dark:text-emerald-400" />
+          </div>
+          <h3 className={cn('text-lg font-bold mb-2', isDark ? 'text-white' : 'text-zinc-900')}>
+            Verifikasi Blockchain
+          </h3>
+          <p className={cn('text-xs leading-relaxed mb-6', isDark ? 'text-zinc-400' : 'text-zinc-500')}>
+            Data sensor lingkungan ini telah dienkripsi dan disimpan dalam jaringan terdesentralisasi (blockchain). Data ini bersifat <strong>immutable</strong> (tidak dapat dimanipulasi).
+          </p>
+          
+          <div className={cn(
+            'w-full rounded-2xl p-4 border text-left mb-6',
+            isDark ? 'bg-zinc-950 border-zinc-800' : 'bg-zinc-50 border-zinc-200'
+          )}>
+            <p className={cn('text-[10px] uppercase tracking-widest font-bold mb-1', isDark ? 'text-zinc-500' : 'text-zinc-400')}>
+              Ledger Hash
+            </p>
+            <p className="font-mono text-xs sm:text-sm text-emerald-600 dark:text-emerald-400 break-all">
+              {hash}
+            </p>
+          </div>
+          
+          <button
+            onClick={onClose}
+            className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition-colors text-sm"
+          >
+            Tutup Verifikasi
+          </button>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
+
 // ─── IoT Panel ────────────────────────────────────────────────────────────────
 
 interface IoTPanelProps {
@@ -447,7 +500,10 @@ interface IoTPanelProps {
 }
 
 function IoTPanel({ iot, c, isDark, isLive }: IoTPanelProps) {
+  const [showModal, setShowModal] = useState(false);
+
   return (
+    <>
     <div className={cn(
       'rounded-2xl border p-3 sm:p-4 space-y-3',
       isDark ? 'bg-zinc-900 border-zinc-700' : 'bg-emerald-50/60 border-emerald-200',
@@ -496,12 +552,27 @@ function IoTPanel({ iot, c, isDark, isLive }: IoTPanelProps) {
         <IoTSparkline readings={iot.readings} isLive={isLive} />
         <a
           href="#"
-          className="flex items-center gap-1 text-xs text-emerald-600 dark:text-emerald-400 hover:underline"
+          onClick={(e) => {
+            e.preventDefault();
+            setShowModal(true);
+          }}
+          className="flex items-center gap-1 text-xs text-emerald-600 dark:text-emerald-400 hover:underline cursor-pointer"
         >
           <ExternalLink size={11} /> {c.iotLive}
         </a>
       </div>
     </div>
+
+      <AnimatePresence>
+        {showModal && (
+          <BlockchainModal
+            isDark={isDark}
+            hash={iot.ledgerHash}
+            onClose={() => setShowModal(false)}
+          />
+        )}
+      </AnimatePresence>
+    </>
   );
 }
 
@@ -772,9 +843,9 @@ function AgrowisataCTA({ result, c, isDark }: AgrowisataCTAProps) {
       {/* Hero image */}
       <div className="relative h-32 sm:h-36 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800&q=70&auto=format&fit=crop"
+          src="/images/kebun-agrowisata.png"
           alt="Agrowisata kakao Jembrana"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[center_35%]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/80 via-emerald-900/30 to-transparent" />
         <div className="absolute bottom-3 left-4 right-4">
