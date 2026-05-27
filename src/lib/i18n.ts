@@ -154,7 +154,7 @@ export const t = {
       features: [
         { title: 'Keterlacakan',   en: 'Farm-to-Bar Transparency',    desc: 'Lacak perjalanan kakao dari kebun petani hingga ke kemasan cokelat di tangan Anda. Ketahui nama petani, lokasi kebun, tanggal panen, dan data kualitas pengeringan.', cta: 'Lacak Produk',    href: '/trace'     },
         { title: 'Smart Dryer IoT',en: 'Precision Drying Technology', desc: 'Kabinet pengering hibrida 200 kg dengan sensor IoT DHT22, panel surya, dan kendali suhu otomatis. Eliminasi ketergantungan pada cuaca & risiko jamur.',            cta: 'Lihat Teknologi', href: '/teknologi' },
-        { title: 'Edu-Tourism',    en: 'Interactive Education',       desc: 'Digital storytelling tentang sejarah kebun, profil petani, sistem Subak Abian, dan proses fermentasi. Mengubah cokelat menjadi portal edukasi interaktif.',           cta: 'Jelajahi Edukasi', href: '/edukasi'    },
+        { title: 'Edu-Tourism',    en: 'Interactive Education',       desc: 'Menyelami kisah di balik setiap gigitan cokelat. Temukan kearifan lokal Subak Abian, dedikasi para petani, hingga keajaiban proses fermentasi melalui pengalaman digital yang imersif.',           cta: 'Jelajahi Edukasi', href: '/edukasi'    },
         { title: 'Agrowisata',     en: 'Cacao Agrotourism',           desc: 'Paket wisata pemetikan kakao, edukasi fermentasi, dan kunjungan kebun langsung di Jembrana. Navigasi Google Maps terintegrasi menuju lokasi.',                        cta: 'Pesan Wisata',    href: '/wisata'    },
       ],
 
@@ -296,7 +296,7 @@ export const t = {
       features: [
         { title: 'Traceability',   en: 'Farm-to-Bar Transparency',    desc: 'Track cacao\'s journey from the farmer\'s plot to the chocolate in your hands. Know the farmer\'s name, farm location, harvest date, and drying quality data.', cta: 'Trace Product',   href: '/trace'     },
         { title: 'IoT Smart Dryer',en: 'Precision Drying Technology', desc: '200 kg hybrid drying cabinet with IoT DHT22 sensor, solar panels, and automated temperature control. Eliminates weather dependency and mold risk.',          cta: 'View Technology', href: '/teknologi' },
-        { title: 'Edu-Tourism',    en: 'Interactive Education',       desc: 'Digital storytelling on plantation history, farmer profiles, the Subak Abian system, and the fermentation process — turning chocolate into an interactive education portal.', cta: 'Explore Education', href: '/edukasi'    },
+        { title: 'Edu-Tourism',    en: 'Interactive Education',       desc: 'Dive into the story behind every bite. Discover the ancient wisdom of Subak Abian, the dedication of local farmers, and the magic of fermentation through an immersive digital journey.', cta: 'Explore Education', href: '/edukasi'    },
         { title: 'Agrotourism',    en: 'Cacao Agrotourism',           desc: 'Cacao picking packages, fermentation education, and direct farm visits in Jembrana. Integrated Google Maps navigation to the location.',                        cta: 'Book a Tour',     href: '/wisata'    },
       ],
 
