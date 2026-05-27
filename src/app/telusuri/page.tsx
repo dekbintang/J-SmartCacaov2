@@ -8,7 +8,7 @@ import { Poppins } from 'next/font/google';
 import {
   MapPin, Search, ChevronRight, X, Clock,
   Ticket, Waves, Mountain, Utensils, Landmark, TreePine,
-  Filter, Map, Navigation, ChevronDown, Sparkles, ArrowUp
+  Filter, Map, Navigation, ChevronDown, Sparkles, ArrowUp, Star
 } from 'lucide-react';
 
 const poppins = Poppins({
@@ -318,9 +318,17 @@ function DetailModal({ spot, isDark, c, onClose, currentLang }: {
             <X size={16} />
           </button>
 
-          <div className="absolute top-4 left-4 flex items-center gap-1.5 px-3 py-1.5 bg-black/50 backdrop-blur-sm rounded-full text-white text-[11px] font-medium">
-            <CatIcon size={11} className={cat.color} />
-            <span>{catLabel}</span>
+          <div className="absolute top-4 left-4 flex flex-col gap-2">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 bg-black/50 backdrop-blur-sm rounded-full text-white text-[11px] font-medium w-fit">
+              <CatIcon size={11} className={cat.color} />
+              <span>{catLabel}</span>
+            </div>
+            {spot.rating > 0 && (
+              <div className="flex items-center gap-1.5 px-3 py-1.5 bg-black/50 backdrop-blur-sm rounded-full text-amber-400 text-[11px] font-bold w-fit shadow-sm">
+                <Star size={11} className="fill-amber-400" />
+                <span>{spot.rating} <span className="text-white/80 font-medium">({spot.reviewCount})</span></span>
+              </div>
+            )}
           </div>
 
           <div className="absolute bottom-5 left-5 right-5">
@@ -339,7 +347,11 @@ function DetailModal({ spot, isDark, c, onClose, currentLang }: {
               <CatIcon size={12} className={cat.color} />
               {catLabel}
             </span>
-
+            {spot.tags?.map(tag => (
+              <span key={tag} className={`px-2.5 py-1.5 rounded-lg text-xs font-medium border ${isDark ? 'bg-zinc-800 border-zinc-700 text-zinc-400' : 'bg-gray-50 border-gray-200 text-zinc-600'}`}>
+                {tag}
+              </span>
+            ))}
           </div>
 
           <p className={`text-sm leading-relaxed ${isDark ? 'text-zinc-400' : 'text-zinc-600'}`}>
@@ -426,7 +438,7 @@ function DetailModal({ spot, isDark, c, onClose, currentLang }: {
             </motion.button>
           )}
 
-          <div className="h-2 sm:hidden" />
+          <div className="h-6 sm:hidden" />
         </div>
       </motion.div>
     </div>
@@ -447,23 +459,23 @@ function FloatingStats({ spots, isDark, currentLang }: { spots: TourismSpot[]; i
   ];
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
+    <div className="flex sm:grid sm:grid-cols-4 gap-3 max-w-3xl mx-auto overflow-x-auto pb-4 sm:pb-0 snap-x hide-scrollbar px-4 sm:px-0 -mx-4 sm:mx-auto">
       {stats.map((stat, i) => (
         <motion.div
           key={stat.label}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 + i * 0.08, type: 'spring', stiffness: 260, damping: 20 }}
-          className={`flex items-center gap-3 px-4 py-3 rounded-2xl border ${
+          className={`flex-shrink-0 w-36 sm:w-auto snap-center flex items-center gap-3 px-4 py-3 rounded-2xl border ${
             isDark
               ? 'bg-zinc-900/80 border-zinc-800'
               : 'bg-white/80 border-gray-200 shadow-sm'
           }`}
         >
           <stat.icon size={18} className={stat.color} />
-          <div>
+          <div className="text-left">
             <p className={`font-black text-lg leading-none ${isDark ? 'text-white' : 'text-zinc-900'}`}>{stat.value}</p>
-            <p className={`text-[10px] font-medium ${isDark ? 'text-zinc-500' : 'text-zinc-400'}`}>{stat.label}</p>
+            <p className={`text-[10px] font-medium mt-1 ${isDark ? 'text-zinc-500' : 'text-zinc-500'}`}>{stat.label}</p>
           </div>
         </motion.div>
       ))}
