@@ -690,26 +690,7 @@ function HeroSection() {
           </Link>
         </motion.div>
 
-        {/* Quick trace */}
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }}
-          className="mt-8 sm:mt-12 max-w-md mx-auto px-2 sm:px-0"
-        >
-          <p className="text-xs mb-2 flex items-center justify-center gap-1 text-white/50">
-            <ScanLine size={11} /> {t.qrHint}
-          </p>
-          <div className="flex gap-2">
-            <input type="text" placeholder={t.qrPlaceholder} value={batch}
-              onChange={e => setBatch(e.target.value)}
-              onKeyDown={e => { if (e.key === 'Enter' && batch.trim()) window.location.href = `/trace?batch=${batch.trim()}`; }}
-              className="flex-1 min-w-0 px-4 py-3 rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-emerald-400/60 transition-colors"
-            />
-            <Link href={batch.trim() ? `/trace?batch=${batch.trim()}` : '/trace'}>
-              <button className="flex-shrink-0 px-4 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white transition-colors">
-                <Search size={18} />
-              </button>
-            </Link>
-          </div>
-        </motion.div>
+
       </div>
 
       {/* Scroll indicator */}
@@ -740,8 +721,8 @@ function StatsSection() {
             const Icon = s.icon;
             const isOpen = openTooltip === i;
             return (
-              <FadeIn key={i} delay={i * 0.1}>
-                <div className={`relative text-center p-4 sm:p-6 rounded-2xl border transition-all duration-300 group cursor-pointer
+              <FadeIn key={i} delay={i * 0.1} className="h-full">
+                <div className={`h-full flex flex-col relative text-center p-4 sm:p-6 rounded-2xl border transition-all duration-300 group cursor-pointer
                   ${isOpen
                     ? isDark ? 'border-emerald-700/50 bg-emerald-500/5' : 'border-emerald-400/50 bg-emerald-50'
                     : `${st.card} hover:border-green-700/50`}`}
@@ -756,22 +737,24 @@ function StatsSection() {
                     />
                   )}
 
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-green-500/10 flex items-center justify-center mx-auto mb-3 group-hover:bg-green-500/20 transition-colors">
-                    <Icon size={18} className="text-green-400" />
+                  <div className="flex-1">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-green-500/10 flex items-center justify-center mx-auto mb-3 group-hover:bg-green-500/20 transition-colors">
+                      <Icon size={18} className="text-green-400" />
+                    </div>
+                    <div className={`text-2xl sm:text-4xl font-black mb-1 ${st.h}`}>
+                      <AnimatedCounter target={s.value} suffix={s.suffix} />
+                    </div>
+                    <p className={`text-xs sm:text-sm font-bold ${isDark ? 'text-zinc-300' : 'text-zinc-700'}`}>
+                      {/* FIXED: pakai isId, bukan isDark */}
+                      {isId ? s.labelId : s.labelEn}
+                    </p>
+                    <p className={`text-[10px] sm:text-xs mt-0.5 ${st.muted}`}>
+                      {isId ? s.subId : s.subEn}
+                    </p>
                   </div>
-                  <div className={`text-2xl sm:text-4xl font-black mb-1 ${st.h}`}>
-                    <AnimatedCounter target={s.value} suffix={s.suffix} />
-                  </div>
-                  <p className={`text-xs sm:text-sm font-bold ${isDark ? 'text-zinc-300' : 'text-zinc-700'}`}>
-                    {/* FIXED: pakai isId, bukan isDark */}
-                    {isId ? s.labelId : s.labelEn}
-                  </p>
-                  <p className={`text-[10px] sm:text-xs mt-0.5 ${st.muted}`}>
-                    {isId ? s.subId : s.subEn}
-                  </p>
 
                   {/* Info hint */}
-                  <div className={`mt-2 flex items-center justify-center gap-1 text-[9px] transition-colors
+                  <div className={`mt-3 flex items-center justify-center gap-1 text-[9px] transition-colors
                     ${isOpen ? 'text-emerald-400' : `${st.dim} group-hover:text-emerald-500/60`}`}>
                     <Info size={9} />
                     <span>{isId ? 'Klik untuk detail' : 'Click for detail'}</span>
@@ -1157,7 +1140,6 @@ function EduTourismSection() {
           );
         })}
       </AnimatePresence>
-
       {/* CTA strip */}
       <FadeIn className="mt-8 sm:mt-10" delay={0.2}>
         <div className={`relative p-5 sm:p-6 rounded-2xl border flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 ${st.card} ${st.cardHov}`}>
@@ -1168,7 +1150,7 @@ function EduTourismSection() {
             <p className={`font-black text-sm sm:text-base mb-1 ${st.h}`}>{t.eduCtaTitle}</p>
             <p className={`text-xs sm:text-sm ${st.body}`}>{t.eduCtaDesc}</p>
           </div>
-          <Link href="/budaya" className="flex-shrink-0 w-full sm:w-auto">
+          <Link href="/edukasi" className="flex-shrink-0 w-full sm:w-auto">
             <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
               className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm font-bold hover:bg-emerald-500/20 transition-all"
             ><ExternalLink size={14} />{t.eduCtaBtn}</motion.button>
@@ -1190,13 +1172,14 @@ function PartnersSection() {
         </FadeIn>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
           {PARTNERS.map((p, i) => (
-            <FadeIn key={i} delay={i * 0.05}>
+            <FadeIn key={i} delay={i * 0.05} className="h-full">
               <motion.div whileHover={{ y: -4, scale: 1.02 }} transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                className={`p-4 rounded-2xl border text-center group hover:border-green-700/50 transition-colors cursor-default ${st.card}`}>
+                className={`h-full flex flex-col p-4 rounded-2xl border text-center group hover:border-green-700/50 transition-colors cursor-default ${st.card}`}>
                 <div className="text-2xl mb-2 group-hover:scale-110 transition-transform">{p.emoji}</div>
-                <p className={`text-[11px] font-bold leading-tight ${isDark ? 'text-zinc-300' : 'text-zinc-700'}`}>{p.name}</p>
-                {/* FIXED: pakai isId */}
-                <p className={`text-[9px] mt-0.5 leading-tight ${st.dim}`}>{isId ? p.roleId : p.roleEn}</p>
+                <div className="flex-1 flex flex-col justify-center">
+                  <p className={`text-[11px] font-bold leading-tight ${isDark ? 'text-zinc-300' : 'text-zinc-700'}`}>{p.name}</p>
+                  <p className={`text-[9px] mt-0.5 leading-tight ${st.dim}`}>{isId ? p.roleId : p.roleEn}</p>
+                </div>
               </motion.div>
             </FadeIn>
           ))}
@@ -1261,7 +1244,6 @@ export default function HomePage() {
         <ProblemSection />
         <EcosystemSection />
         <FeaturesSection />
-        <TraceTeaserSection />
         <EduTourismSection />
         <PartnersSection />
         <CTASection />

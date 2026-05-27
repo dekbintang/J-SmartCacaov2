@@ -886,7 +886,9 @@ function AgrowisataCTA({ result, c, isDark }: AgrowisataCTAProps) {
 
         <div className="grid grid-cols-2 gap-2.5">
           <a
-            href={result.agrowisataUrl}
+            href={`https://www.traveloka.com/id-id/activities/search?q=${encodeURIComponent(result.farm)}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-1.5 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-2xl transition-colors text-xs"
           >
             <Ticket size={13} /> {c.ctaBtn}

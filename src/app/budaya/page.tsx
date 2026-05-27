@@ -1868,7 +1868,7 @@ export default function BudayaPage() {
   return (
     <>
       <div
-        className={`min-h-screen pt-24 transition-colors duration-500 ${playfair.variable} ${dmSans.variable}`}
+        className={`min-h-screen pt-0 transition-colors duration-500 ${playfair.variable} ${dmSans.variable}`}
         style={{
           position: 'relative',
           zIndex: 1,

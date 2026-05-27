@@ -221,18 +221,27 @@ const TourismCard = memo(function TourismCard({ spot, isDark, c, onClick, curren
             {c.viewDetail} <ChevronRight size={14} className="transition-transform group-hover:translate-x-0.5" />
           </motion.button>
 
-          {showBooking && (
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              onClick={handleBookingClick}
-              className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl shadow-md shadow-emerald-900/20 transition-all duration-200"
-            >
-              {c.booking}
-            </motion.button>
-          )}
-
-          {!showBooking && (
+          {showBooking ? (
+            <div className="flex gap-2">
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.name + ' Jembrana Bali')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className={`flex items-center justify-center w-9 h-9 rounded-xl transition-all active:scale-95 ${isDark ? 'bg-zinc-800 text-zinc-300 hover:bg-zinc-700 border border-zinc-700' : 'bg-gray-100 text-zinc-600 hover:bg-gray-200 border border-gray-200'}`}
+              >
+                <MapPin size={14} className="text-emerald-500" />
+              </a>
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                onClick={handleBookingClick}
+                className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl shadow-md shadow-emerald-900/20 transition-all duration-200"
+              >
+                {c.booking}
+              </motion.button>
+            </div>
+          ) : (
             <a
               href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.name + ' Jembrana Bali')}`}
               target="_blank"
@@ -263,12 +272,7 @@ function DetailModal({ spot, isDark, c, onClose, currentLang }: {
   const showBooking = shouldShowBooking(spot);
   const shouldReduceMotion = useReducedMotion();
 
-  const y = useMotionValue(0);
   const modalRef = useRef<HTMLDivElement>(null);
-
-  const handleDragEnd = useCallback((_: unknown, info: { velocity: { y: number }; offset: { y: number } }) => {
-    if (info.velocity.y > 400 || info.offset.y > 180) onClose();
-  }, [onClose]);
 
   const handleBackdropClick = useCallback((e: React.MouseEvent) => {
     if (e.target === e.currentTarget) onClose();
@@ -287,11 +291,6 @@ function DetailModal({ spot, isDark, c, onClose, currentLang }: {
     >
       <motion.div
         ref={modalRef}
-        drag="y"
-        dragConstraints={{ top: 0, bottom: 0 }}
-        dragElastic={{ top: 0, bottom: 0.4 }}
-        onDragEnd={handleDragEnd}
-        style={{ y }}
         initial={shouldReduceMotion ? { y: 0 } : { y: '100%' }}
         animate={{ y: 0 }}
         exit={shouldReduceMotion ? {} : { y: '100%' }}
@@ -533,7 +532,7 @@ export default function TelusurPage() {
   return (
     <div className={`min-h-screen transition-colors duration-200 ${poppins.className} ${isDark ? 'bg-zinc-950' : 'bg-gray-50'}`}>
 
-      <main className="pt-24 pb-20 px-4 w-full max-w-7xl mx-auto">
+      <main className="pt-6 sm:pt-10 pb-20 px-4 w-full max-w-7xl mx-auto">
         {/* ─── Hero Section ─── */}
         <motion.div
           ref={heroRef}

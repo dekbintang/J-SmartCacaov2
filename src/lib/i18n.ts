@@ -26,6 +26,59 @@ export const t = {
     },
   },
 
+  edukasi: {
+    id: {
+      hero_badge: 'Edukasi & Cerita Kebun',
+      hero_title1: 'Menyelami Cerita',
+      hero_title2: 'Kakao Jembrana',
+      hero_desc: 'Temukan kisah di balik setiap biji kakao premium. Jelajahi galeri kebun, pelajari proses fermentasi, kenali sistem Subak Abian, dan dengarkan langsung cerita dari para petani.',
+      
+      fermentation_title: 'Proses Fermentasi Kakao',
+      fermentation_desc: 'Saksikan bagaimana biji kakao Jembrana difermentasi secara alami selama 5-7 hari menggunakan kotak kayu berlapis daun pisang untuk menghasilkan profil rasa yang kompleks.',
+      
+      subak_title: 'Sistem Subak Abian',
+      subak_desc: 'Sistem tata kelola pertanian komunal berbasis adat Bali yang mengedepankan filosofi Tri Hita Karana—keharmonisan antara manusia, alam, dan Tuhan.',
+      
+      farmers_title: 'Suara Petani Kami',
+      farmers_desc: 'Kenali lebih dekat sosok di balik kakao premium yang Anda nikmati.',
+      farmers_quotes: [
+        { time: 196, name: 'Anggota KTT Merta Abadi', role: 'Fokus Budidaya', quote: 'Tujuannya biar kualitas daripada biji itu bisa dijaga. Jadinya petani fokus budidaya. Karena inilah kita ada namanya Pasar Minggu coklat.' },
+        { time: 214, name: 'Pengurus KTT Merta Abadi', role: 'Dampak Ekonomi', quote: 'Pasar Minggu yang dilakukan KTT Mertabadi ini sangat-sangat membantu sekali. Nah, terutama di segi ekonominya mereka bahwa wajib mereka panen dan mendapatkan hasil dan cash.' },
+        { time: 355, name: 'Petani Kakao', role: 'Semangat Bertani', quote: 'Bagi petani-petani kakau yang ada di Indonesia, ayo tetap semangat. Ayo kita berbudi raya kakau. Kakau sangat menjanjikan.' },
+        { time: 372, name: 'Petani Kakao Jembrana', role: 'Masa Depan', quote: 'Ayo kita manajemen bagaimana kita menyedemen pertanian kakau ini menjadi harapan, menjadi masa depan bagi anak-anak cucu di ke depannya.' },
+        { time: 385, name: 'Anggota KTT Merta Abadi', role: 'Manajemen Komoditas', quote: 'Budidaya kakau adalah bagaimana kita memanajemen kakau itu sendiri menjadi tumpuan dan harapan keluarga, menjadi salah satu komoditi unggulan yang ada di Indonesia.' }
+      ],
+      
+      gallery_title: 'Galeri Kebun',
+      gallery_desc: 'Jejak langkah di perkebunan kakao Jembrana yang hijau dan asri.',
+    },
+    en: {
+      hero_badge: 'Education & Farm Story',
+      hero_title1: 'Dive into the Story of',
+      hero_title2: 'Jembrana Cacao',
+      hero_desc: 'Discover the story behind every premium cacao bean. Explore farm galleries, learn the fermentation process, understand the Subak Abian system, and hear directly from our farmers.',
+      
+      fermentation_title: 'Cacao Fermentation Process',
+      fermentation_desc: 'Watch how Jembrana cacao beans are naturally fermented for 5-7 days using banana-leaf-lined wooden boxes to develop their complex flavor profile.',
+      
+      subak_title: 'The Subak Abian System',
+      subak_desc: 'A traditional Balinese communal agricultural management system based on the Tri Hita Karana philosophy—harmony between people, nature, and the divine.',
+      
+      farmers_title: 'Voices of Our Farmers',
+      farmers_desc: 'Get to know the faces behind the premium cacao you enjoy.',
+      farmers_quotes: [
+        { time: 196, name: 'Merta Abadi Member', role: 'Cultivation Focus', quote: 'The goal is so that the quality of the beans can be maintained. So farmers can focus on cultivation. This is why we have the Sunday Chocolate Market.' },
+        { time: 214, name: 'Merta Abadi Board', role: 'Economic Impact', quote: 'The Sunday Market held by KTT Merta Abadi is extremely helpful. Especially economically, it ensures they harvest and get direct cash results.' },
+        { time: 355, name: 'Cacao Farmer', role: 'Farming Spirit', quote: 'To all cacao farmers in Indonesia, keep your spirits up! Let\'s cultivate cacao. Cacao is very promising.' },
+        { time: 372, name: 'Jembrana Cacao Farmer', role: 'Future Hope', quote: 'Let\'s manage cacao farming to become a hope, a future for our children and grandchildren ahead.' },
+        { time: 385, name: 'Merta Abadi Member', role: 'Commodity Management', quote: 'Cacao cultivation is about how we manage it to become the foundation and hope of our family, becoming one of Indonesia\'s leading commodities.' }
+      ],
+      
+      gallery_title: 'Farm Gallery',
+      gallery_desc: 'Footsteps through the lush, green Jembrana cacao plantations.',
+    }
+  },
+
   // ─── TAMBAHAN BARU ───────────────────────────────────────────────
   home: {
     id: {
