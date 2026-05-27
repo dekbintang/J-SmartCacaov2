@@ -438,7 +438,7 @@ function DetailModal({ spot, isDark, c, onClose, currentLang }: {
             </motion.button>
           )}
 
-          <div className="h-6 sm:hidden" />
+          <div className="h-28 sm:h-6" />
         </div>
       </motion.div>
     </div>
